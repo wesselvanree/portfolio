@@ -11,8 +11,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  margin-top: 80px;
+main {
+  padding-top: 80px;
 }
 
 #navigation {
@@ -21,16 +21,21 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+#navigation .navigation__inner {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#navigation .navigation__label {
+#navigation .navigation__inner .navigation__label {
   padding: 0 12px;
 }
 
-#navigation .navigation__bar {
+#navigation .navigation__inner .navigation__bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,11 +51,11 @@ h1 {
   background-color: white;
 }
 
-#navigation .navigation__bar p {
+#navigation .navigation__inner .navigation__bar p {
   margin: 0;
 }
 
-#navigation .navigation__bar .hamburger {
+#navigation .navigation__inner .navigation__bar .hamburger {
   height: 50px;
   width: 50px;
   padding: 12px;
@@ -58,8 +63,8 @@ h1 {
   cursor: pointer;
 }
 
-#navigation .navigation__bar .hamburger .hamburger__line--top,
-#navigation .navigation__bar .hamburger .hamburger__line--bottom {
+#navigation .navigation__inner .navigation__bar .hamburger .hamburger__line--top,
+#navigation .navigation__inner .navigation__bar .hamburger .hamburger__line--bottom {
   position: absolute;
   left: 12px;
   height: 1px;
@@ -71,31 +76,31 @@ h1 {
   transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
 }
 
-#navigation .navigation__bar .hamburger .hamburger__line--top {
+#navigation .navigation__inner .navigation__bar .hamburger .hamburger__line--top {
   top: 50%;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
-#navigation .navigation__bar .hamburger .hamburger__line--bottom {
+#navigation .navigation__inner .navigation__bar .hamburger .hamburger__line--bottom {
   bottom: 50%;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
 }
 
-#navigation .navigation__bar .hamburger.active .hamburger__line--top {
+#navigation .navigation__inner .navigation__bar .hamburger.active .hamburger__line--top {
   top: 50%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-#navigation .navigation__bar .hamburger.active .hamburger__line--bottom {
+#navigation .navigation__inner .navigation__bar .hamburger.active .hamburger__line--bottom {
   bottom: 50%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-#navigation .navigation__menu {
+#navigation .navigation__inner .navigation__menu {
   margin: 0;
   position: absolute;
   top: 100%;
@@ -115,7 +120,7 @@ h1 {
           box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-#navigation .navigation__menu .navigation__menu__line {
+#navigation .navigation__inner .navigation__menu .navigation__menu__line {
   height: 1px;
   width: 100%;
   background-color: #e2e2e2;
@@ -125,7 +130,7 @@ h1 {
   transition: opacity 200ms 150ms ease-out;
 }
 
-#navigation .navigation__menu li {
+#navigation .navigation__inner .navigation__menu li {
   opacity: 0;
   -webkit-transition: opacity 200ms 150ms ease-out;
   transition: opacity 200ms 150ms ease-out;
@@ -138,7 +143,7 @@ h1 {
           flex-direction: column;
 }
 
-#navigation .navigation__menu li a {
+#navigation .navigation__inner .navigation__menu li a {
   padding: 14px 0;
   height: 100%;
   width: 100%;
@@ -148,36 +153,93 @@ h1 {
   transition: opacity 150ms ease-out;
 }
 
-#navigation .navigation__menu li a:hover {
+#navigation .navigation__inner .navigation__menu li a:hover {
   opacity: 0.6;
 }
 
-#navigation .navigation__menu li:last-child {
+#navigation .navigation__inner .navigation__menu li:last-child {
   border: none;
 }
 
-#navigation .navigation__menu.is-closing {
-  -webkit-transition: -webkit-transform 200ms 250ms ease-in;
-  transition: -webkit-transform 200ms 250ms ease-in;
-  transition: transform 200ms 250ms ease-in;
-  transition: transform 200ms 250ms ease-in, -webkit-transform 200ms 250ms ease-in;
+#navigation .navigation__inner .navigation__menu.is-closing {
+  -webkit-transition: -webkit-transform 250ms 200ms ease-in;
+  transition: -webkit-transform 250ms 200ms ease-in;
+  transition: transform 250ms 200ms ease-in;
+  transition: transform 250ms 200ms ease-in, -webkit-transform 250ms 200ms ease-in;
 }
 
-#navigation .navigation__menu.is-closing li {
+#navigation .navigation__inner .navigation__menu.is-closing li {
   -webkit-transition: opacity 200ms 0 ease-in;
   transition: opacity 200ms 0 ease-in;
 }
 
-#navigation .navigation__menu.visible {
+#navigation .navigation__inner .navigation__menu.visible {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-#navigation .navigation__menu.visible .navigation__menu__line {
+#navigation .navigation__inner .navigation__menu.visible .navigation__menu__line {
   opacity: 1;
 }
 
-#navigation .navigation__menu.visible li {
+#navigation .navigation__inner .navigation__menu.visible li {
   opacity: 1;
+}
+
+@media screen and (min-width: 600px) {
+  #navigation {
+    background-color: white;
+    -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    height: 60px;
+  }
+  #navigation .navigation__inner {
+    max-width: 1100px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #navigation .navigation__inner .navigation__bar {
+    width: initial;
+    background-color: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    padding: 0 20px;
+  }
+  #navigation .navigation__inner .navigation__bar .hamburger {
+    display: none;
+  }
+  #navigation .navigation__inner .navigation__menu {
+    position: initial;
+    -webkit-transform: initial;
+            transform: initial;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: initial;
+  }
+  #navigation .navigation__inner .navigation__menu li {
+    opacity: 1;
+    padding: 0;
+    margin: 0 10px;
+  }
+  #navigation .navigation__inner .navigation__menu li a {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

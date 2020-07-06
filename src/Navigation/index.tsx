@@ -24,52 +24,54 @@ const Navigation = () => {
 
   return (
     <div id="navigation">
-      <div className="navigation__bar">
-        <p className="navigation__label">Wessel van Ree</p>
-        <div
-          className="hamburger"
-          onClick={(event) => {
-            toggleMenu();
-          }}
-        >
-          <div className="hamburger__line hamburger__line--top"></div>
-          <div className="hamburger__line hamburger__line--bottom"></div>
+      <div className="navigation__inner">
+        <div className="navigation__bar">
+          <p className="navigation__label">Wessel van Ree</p>
+          <div
+            className="hamburger"
+            onClick={(event) => {
+              toggleMenu();
+            }}
+          >
+            <div className="hamburger__line hamburger__line--top"></div>
+            <div className="hamburger__line hamburger__line--bottom"></div>
+          </div>
         </div>
+        <ul className={"navigation__menu "}>
+          <li>
+            <Link
+              to="/"
+              onClick={(event) => {
+                toggleMenu();
+              }}
+            >
+              Home
+            </Link>
+            <span className="navigation__menu__line"></span>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              onClick={(event) => {
+                toggleMenu();
+              }}
+            >
+              About
+            </Link>
+            <span className="navigation__menu__line"></span>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              onClick={(event) => {
+                toggleMenu();
+              }}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
-      <ul className={"navigation__menu "}>
-        <li>
-          <Link
-            to="/"
-            onClick={(event) => {
-              toggleMenu();
-            }}
-          >
-            Home
-          </Link>
-          <span className="navigation__menu__line"></span>
-        </li>
-        <li>
-          <Link
-            to="/about"
-            onClick={(event) => {
-              toggleMenu();
-            }}
-          >
-            About
-          </Link>
-          <span className="navigation__menu__line"></span>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            onClick={(event) => {
-              toggleMenu();
-            }}
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
     </div>
   );
 };
