@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,10 +10,34 @@ body {
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
 }
 
 main {
   padding-top: 80px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+}
+
+p {
+  color: #333333cc;
+}
+
+.button-1 {
+  color: #2c73ee;
+  text-decoration: none;
+  font-size: 1em;
+  -webkit-transition: -webkit-box-shadow 100ms ease-out;
+  transition: -webkit-box-shadow 100ms ease-out;
+  transition: box-shadow 100ms ease-out;
+  transition: box-shadow 100ms ease-out, -webkit-box-shadow 100ms ease-out;
+}
+
+.button-1:hover {
+  text-decoration: underline;
 }
 
 #navigation {
@@ -21,6 +46,8 @@ main {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
+  color: #333;
 }
 
 #navigation .navigation__inner {
@@ -33,6 +60,7 @@ main {
 
 #navigation .navigation__inner .navigation__label {
   padding: 0 12px;
+  color: #333;
 }
 
 #navigation .navigation__inner .navigation__bar {
@@ -61,6 +89,7 @@ main {
   padding: 12px;
   position: relative;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #navigation .navigation__inner .navigation__bar .hamburger .hamburger__line--top,
@@ -116,8 +145,8 @@ main {
   transition: transform 200ms ease-out;
   transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
   z-index: 0;
-  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 #navigation .navigation__inner .navigation__menu .navigation__menu__line {
@@ -141,6 +170,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1em;
 }
 
 #navigation .navigation__inner .navigation__menu li a {
@@ -151,6 +181,7 @@ main {
   text-decoration: none;
   -webkit-transition: opacity 150ms ease-out;
   transition: opacity 150ms ease-out;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #navigation .navigation__inner .navigation__menu li a:hover {
@@ -169,8 +200,8 @@ main {
 }
 
 #navigation .navigation__inner .navigation__menu.is-closing li {
-  -webkit-transition: opacity 200ms 0 ease-in;
-  transition: opacity 200ms 0 ease-in;
+  -webkit-transition: opacity 200ms 0 ease-out;
+  transition: opacity 200ms 0 ease-out;
 }
 
 #navigation .navigation__inner .navigation__menu.visible {
@@ -188,13 +219,11 @@ main {
 
 @media screen and (min-width: 600px) {
   #navigation {
-    background-color: white;
-    -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
     height: 60px;
   }
   #navigation .navigation__inner {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,6 +249,8 @@ main {
   }
   #navigation .navigation__inner .navigation__menu {
     position: initial;
+    padding: 0;
+    padding-right: 30px;
     -webkit-transform: initial;
             transform: initial;
     -webkit-box-shadow: none;
@@ -232,14 +263,19 @@ main {
         -ms-flex-align: center;
             align-items: center;
     width: initial;
+    background-color: #f4f4f4;
   }
   #navigation .navigation__inner .navigation__menu li {
     opacity: 1;
     padding: 0;
     margin: 0 10px;
+    font-size: 0.9em;
   }
   #navigation .navigation__inner .navigation__menu li a {
     padding: 0;
+  }
+  #navigation .navigation__inner .navigation__menu .navigation__menu__line {
+    display: none;
   }
 }
 /*# sourceMappingURL=index.css.map */

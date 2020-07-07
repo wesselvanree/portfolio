@@ -1,3 +1,14 @@
+$text: #333;
+$textLight: #333333cc;
+$navigationBackground: white;
+$navigationSecondaryBackground: #e2e2e2;
+$navigationColor: #333;
+
+// colors
+$blue: #2c73ee;
+$purple: #5355c7;
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -7,14 +18,36 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  color: #333;
+  color: $text;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
 }
 
 // global
 main {
   padding-top: 80px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+}
+
+p {
+  color: $textLight;
+}
+
+.button-1 {
+  color: $blue;
+  text-decoration: none;
+  font-size: 1em;
+  transition: box-shadow 100ms ease-out;
+}
+
+.button-1:hover {
+  // box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  text-decoration: underline;
 }
 
 // navigation
@@ -24,6 +57,8 @@ main {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
+  color: $navigationColor;
 
   .navigation__inner {
     height: 100%;
@@ -32,6 +67,7 @@ main {
 
     .navigation__label {
       padding: 0 12px;
+      color: $navigationColor;
     }
 
     .navigation__bar {
@@ -41,7 +77,7 @@ main {
       height: 50px;
       width: 100%;
       z-index: 1;
-      background-color: white;
+      background-color: $navigationBackground;
 
       p {
         margin: 0;
@@ -53,6 +89,7 @@ main {
         padding: 12px;
         position: relative;
         cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
 
         .hamburger__line--top,
         .hamburger__line--bottom {
@@ -60,7 +97,7 @@ main {
           left: 12px;
           height: 1px;
           width: 50%;
-          background-color: #333;
+          background-color: $navigationColor;
           transition: transform 200ms ease-out;
         }
 
@@ -95,17 +132,17 @@ main {
       left: 0;
       width: 100%;
       padding: 0 30px;
-      background-color: white;
+      background-color: $navigationBackground;
       list-style-type: none;
       transform: translateY(-100%);
       transition: transform 200ms ease-out;
       z-index: 0;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 
       .navigation__menu__line {
         height: 1px;
         width: 100%;
-        background-color: #e2e2e2;
+        background-color: $navigationSecondaryBackground;
         display: block;
         opacity: 0;
         transition: opacity 200ms 150ms ease-out;
@@ -116,6 +153,7 @@ main {
         transition: opacity 200ms 150ms ease-out;
         display: flex;
         flex-direction: column;
+        font-size: 1em;
 
         a {
           padding: 14px 0;
@@ -124,6 +162,7 @@ main {
           color: inherit;
           text-decoration: none;
           transition: opacity 150ms ease-out;
+          -webkit-tap-highlight-color: transparent;
         }
 
         a:hover {
@@ -140,7 +179,7 @@ main {
       transition: transform 250ms 200ms ease-in;
 
       li {
-        transition: opacity 200ms 0 ease-in;
+        transition: opacity 200ms 0 ease-out;
       }
     }
 
@@ -159,13 +198,14 @@ main {
 }
 
 @media screen and (min-width: 600px) {
+  $navigationBackground: #f4f4f4;
+
   #navigation {
-    background-color: white;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: $navigationBackground;
     height: 60px;
 
     .navigation__inner {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
       display: flex;
       justify-content: space-between;
@@ -185,21 +225,29 @@ main {
 
       .navigation__menu {
         position: initial;
+        padding: 0;
+        padding-right: 30px;
         transform: initial;
         box-shadow: none;
         z-index: 1;
         display: flex;
         align-items: center;
         width: initial;
+        background-color: $navigationBackground;
 
         li {
           opacity: 1;
           padding: 0;
           margin: 0 10px;
+          font-size: 0.9em;
 
           a {
             padding: 0;
           }
+        }
+
+        .navigation__menu__line {
+          display: none;
         }
       }
     }

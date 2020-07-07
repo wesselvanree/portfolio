@@ -1,25 +1,31 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./Home";
+import Projects from "./Projects";
 import Navigation from "./Navigation";
+import hydrautronics from "./images/hydrautronics.jpg";
+import ivdh from "./images/ivdh.jpg";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navigation />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <h1>About</h1>
-        </Route>
-        <Route path="/contact">
-          <h1>Contact</h1>
-        </Route>
-      </Switch>
-    </Router>
+      <Projects projects={projects} />
+    </>
   );
 }
+
+const projects: Projects = {
+  hydrautronics: {
+    name: "Hydrautronics",
+    year: 2019,
+    image: hydrautronics,
+    url: "https://hydrautronics.eu",
+  },
+  ivdh: {
+    name: "Ivdh Interieurontwerp",
+    year: 2020,
+    image: ivdh,
+    url: "https://ivdhinterieurontwerp.nl",
+  },
+};
 
 export default App;
