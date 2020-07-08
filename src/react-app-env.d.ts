@@ -19,6 +19,7 @@ interface GithubProject {
   name: string;
   url: string;
   description: string;
+  topics: string[];
 }
 
 interface GithubProjectProps {
