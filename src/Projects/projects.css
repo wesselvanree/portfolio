@@ -18,8 +18,8 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  max-height: 300px;
-  max-width: 500px;
+  max-height: 360px;
+  max-width: 600px;
 }
 
 .project-showcase .project-showcase__content {
@@ -71,5 +71,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px 20px;
+}
+
+body.js-not-mobile-device .project-showcase {
+  padding-bottom: 60px;
+}
+
+body.js-not-mobile-device .project-showcase .project-showcase__link {
+  display: none;
 }
 /*# sourceMappingURL=projects.css.map */

@@ -2,11 +2,11 @@ import React from "react";
 import "./projects.css";
 import Project from "./Project";
 
-interface HomeProps {
+interface ProjectsProps {
   projects: Projects;
 }
 
-const Projects = ({ projects }: HomeProps) => {
+const Projects = ({ projects }: ProjectsProps) => {
   return (
     <main>
       <section id="projects">
