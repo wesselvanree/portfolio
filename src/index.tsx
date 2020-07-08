@@ -19,6 +19,7 @@ ReactDOM.render(
 serviceWorker.unregister();
 
 const smoothScroll = new SmoothScroll();
+
 if (!smoothScroll.isMobileDevice) {
-  document.querySelector("body")?.classList.add("js-not-mobile-device");
+  document.querySelector("body")?.classList.add("js-no-touch");
 }

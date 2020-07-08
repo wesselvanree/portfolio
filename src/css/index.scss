@@ -50,6 +50,12 @@ p {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 2.4em;
+  }
+}
+
 // navigation
 #navigation {
   width: 100%;
@@ -64,6 +70,8 @@ p {
     height: 100%;
     width: 100%;
     display: flex;
+    max-width: 1000px;
+    margin: auto;
 
     .navigation__label {
       padding: 0 12px;
@@ -205,8 +213,6 @@ p {
     height: 60px;
 
     .navigation__inner {
-      max-width: 1000px;
-      margin: auto;
       display: flex;
       justify-content: space-between;
 
