@@ -1,5 +1,9 @@
-.project-showcase {
+.project-showcase-container {
   padding: 20px;
+  padding-top: 140px;
+}
+
+.project-showcase-container .project-showcase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,17 +14,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 600px;
+  margin: auto;
+  position: relative;
 }
 
-.project-showcase .project-showcase__image-container {
+.project-showcase-container .project-showcase .project-showcase__image-container {
   width: 100%;
   height: 54vw;
   max-height: 360px;
-  max-width: 600px;
   overflow: hidden;
 }
 
-.project-showcase .project-showcase__image-container .project-showcase__image {
+.project-showcase-container .project-showcase .project-showcase__image-container .project-showcase__image {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -34,8 +40,8 @@
           transform: scale(1.1);
 }
 
-.project-showcase .project-showcase__content {
-  width: auto;
+.project-showcase-container .project-showcase .project-showcase__content {
+  max-width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,44 +54,61 @@
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   z-index: 1;
   color: inherit;
   text-decoration: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.project-showcase .project-showcase__content p,
-.project-showcase .project-showcase__content h2 {
+.project-showcase-container .project-showcase .project-showcase__content p,
+.project-showcase-container .project-showcase .project-showcase__content h2 {
   margin: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
-.project-showcase .project-showcase__content p {
+.project-showcase-container .project-showcase .project-showcase__content p {
   position: relative;
   bottom: -6px;
 }
 
-.project-showcase .project-showcase__content .project-showcase__line {
+.project-showcase-container .project-showcase .project-showcase__content .project-showcase__line {
   position: absolute;
-  bottom: -70px;
+  bottom: -75px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   display: block;
   width: 1px;
-  height: 60px;
+  height: 70px;
   background-color: #333;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  border-radius: 0;
 }
 
-.project-showcase .project-showcase__content .project-showcase__underline {
-  height: 2px;
-  width: 0;
+.project-showcase-container .project-showcase .project-showcase__content .project-showcase__underline {
+  height: 1px;
+  width: 100%;
   background-color: #333;
-  -webkit-transition: width 200ms ease-out;
-  transition: width 200ms ease-out;
+  -webkit-transition: -webkit-transform 200ms 100ms ease-out;
+  transition: -webkit-transform 200ms 100ms ease-out;
+  transition: transform 200ms 100ms ease-out;
+  transition: transform 200ms 100ms ease-out, -webkit-transform 200ms 100ms ease-out;
+  -webkit-transform: translateY(5px) scaleX(0);
+          transform: translateY(5px) scaleX(0);
   display: block;
 }
 
-.project-showcase .project-showcase__link {
+.project-showcase-container .project-showcase .project-showcase__link {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,42 +119,48 @@
   padding: 30px 20px;
 }
 
-body.js-no-touch .project-showcase {
+body.js-no-touch .project-showcase-container {
   padding-bottom: 60px;
 }
 
-body.js-no-touch .project-showcase .project-showcase__link {
+body.js-no-touch .project-showcase-container .project-showcase__link {
   display: none;
 }
 
-body.js-no-touch .project-showcase .project-showcase__content:hover + .project-showcase__image-container .project-showcase__image {
+body.js-no-touch .project-showcase-container .project-showcase:hover .project-showcase__image-container .project-showcase__image {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-body.js-no-touch .project-showcase .project-showcase__content:hover .project-showcase__underline {
-  width: 100%;
+body.js-no-touch .project-showcase-container .project-showcase:hover .project-showcase__content .project-showcase__underline {
+  -webkit-transform: translateY(5px) scaleX(1);
+          transform: translateY(5px) scaleX(1);
 }
 
-body.js-no-touch .project-showcase .project-showcase__image-container:hover .project-showcase__image {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+body.js-no-touch .project-showcase-container .project-showcase:hover .project-showcase__content .project-showcase__line {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
 }
 
 @media screen and (min-width: 800px) {
-  .project-showcase {
+  .project-showcase-container {
     margin-bottom: 60px;
   }
 }
 
 #other-projects {
   padding: 20px;
+  padding-bottom: 30px;
   background-color: #e9e9e9;
 }
 
 #other-projects .other-projects__inner {
   max-width: 600px;
   margin: auto;
+}
+
+#other-projects .github-projects {
+  margin-bottom: 40px;
 }
 
 #other-projects .github-project {

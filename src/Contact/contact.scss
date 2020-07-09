@@ -1,0 +1,9 @@
+$max-width: 600px;
+
+#contact {
+  .contact__inner {
+    padding: 20px;
+    max-width: $max-width;
+    margin: auto;
+  }
+}

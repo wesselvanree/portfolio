@@ -3,7 +3,7 @@ import React from "react";
 const GithubProject = ({ project }: GithubProjectProps) => {
   return (
     <div className="github-project">
-      <a href={project.url}>
+      <a href={project.url} target="_blanc">
         <h3>{project.name}</h3>
       </a>
       <p className="github-project__description">{project.description}</p>

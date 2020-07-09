@@ -1,33 +1,18 @@
 import React from "react";
 import Projects from "./Projects";
 import Navigation from "./Navigation";
-import hydrautronics from "./images/hydrautronics.jpg";
-import ivdh from "./images/ivdh.jpg";
+import Contact from "./Contact";
 
 function App() {
   return (
     <>
       <Navigation />
       <main>
-        <Projects projects={projects} />
+        <Projects />
+        <Contact />
       </main>
     </>
   );
 }
-
-const projects: Projects = {
-  hydrautronics: {
-    name: "Hydrautronics",
-    year: 2019,
-    image: hydrautronics,
-    url: "https://hydrautronics.eu",
-  },
-  ivdh: {
-    name: "Ivdh Interieurontwerp",
-    year: 2020,
-    image: ivdh,
-    url: "https://ivdhinterieurontwerp.nl",
-  },
-};
 
 export default App;

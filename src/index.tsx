@@ -18,7 +18,15 @@ ReactDOM.render(
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-const smoothScroll = new SmoothScroll();
+const settings = {
+  navigationBreakpoint: 600,
+  distanceFromTopMobile: 50,
+  distanceFromTopDesktop: 60,
+};
+
+const smoothScroll = new SmoothScroll(settings);
+
+console.log(smoothScroll);
 
 if (!smoothScroll.isMobileDevice) {
   document.querySelector("body")?.classList.add("js-no-touch");

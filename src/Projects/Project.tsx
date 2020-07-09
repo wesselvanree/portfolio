@@ -8,13 +8,21 @@ const Project = ({ project }: ProjectProps) => {
   return (
     <div className="project-showcase-container">
       <div className="project-showcase">
-        <a href={project.url} className="project-showcase__content">
+        <a
+          href={project.url}
+          target="_blanc"
+          className="project-showcase__content"
+        >
           <p>{project.year}</p>
           <h2>{project.name}</h2>
           <span className="project-showcase__line"></span>
           <span className="project-showcase__underline"></span>
         </a>
-        <a href={project.url} className="project-showcase__image-container">
+        <a
+          href={project.url}
+          target="_blanc"
+          className="project-showcase__image-container"
+        >
           <div
             className="project-showcase__image"
             style={{ backgroundImage: `url(${project.image})` }}

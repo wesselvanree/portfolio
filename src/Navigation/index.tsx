@@ -77,7 +77,7 @@ const links: Array<NavigationLink> = [
   },
   {
     text: "Contact",
-    url: "#",
+    url: "#contact",
   },
 ];
 
