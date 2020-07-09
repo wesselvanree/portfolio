@@ -25,3 +25,8 @@ interface GithubProject {
 interface GithubProjectProps {
   project: GithubProject;
 }
+
+interface NavigationLink {
+  text: string;
+  url: string;
+}

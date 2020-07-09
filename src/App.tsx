@@ -8,7 +8,9 @@ function App() {
   return (
     <>
       <Navigation />
-      <Projects projects={projects} />
+      <main>
+        <Projects projects={projects} />
+      </main>
     </>
   );
 }

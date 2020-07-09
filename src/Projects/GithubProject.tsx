@@ -8,8 +8,10 @@ const GithubProject = ({ project }: GithubProjectProps) => {
       </a>
       <p className="github-project__description">{project.description}</p>
       <div className="github-project__subjects">
-        {project.topics.map((topic) => (
-          <span className="github-project__subject">{topic}</span>
+        {project.topics.map((topic, index) => (
+          <span key={index} className="github-project__subject">
+            {topic}
+          </span>
         ))}
       </div>
     </div>

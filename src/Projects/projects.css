@@ -12,14 +12,26 @@
           align-items: center;
 }
 
-.project-showcase .project-showcase__image {
+.project-showcase .project-showcase__image-container {
   width: 100%;
   height: 54vw;
+  max-height: 360px;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.project-showcase .project-showcase__image-container .project-showcase__image {
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   position: relative;
-  max-height: 360px;
-  max-width: 600px;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .project-showcase .project-showcase__content {
@@ -32,16 +44,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   z-index: 1;
+  color: inherit;
+  text-decoration: none;
 }
 
 .project-showcase .project-showcase__content p,
-.project-showcase .project-showcase__content h1 {
+.project-showcase .project-showcase__content h2 {
   margin: 0;
 }
 
@@ -52,7 +66,7 @@
 
 .project-showcase .project-showcase__content .project-showcase__line {
   position: absolute;
-  bottom: -40px;
+  bottom: -70px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -60,6 +74,15 @@
   width: 1px;
   height: 60px;
   background-color: #333;
+}
+
+.project-showcase .project-showcase__content .project-showcase__underline {
+  height: 2px;
+  width: 0;
+  background-color: #333;
+  -webkit-transition: width 200ms ease-out;
+  transition: width 200ms ease-out;
+  display: block;
 }
 
 .project-showcase .project-showcase__link {
@@ -79,6 +102,20 @@ body.js-no-touch .project-showcase {
 
 body.js-no-touch .project-showcase .project-showcase__link {
   display: none;
+}
+
+body.js-no-touch .project-showcase .project-showcase__content:hover + .project-showcase__image-container .project-showcase__image {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body.js-no-touch .project-showcase .project-showcase__content:hover .project-showcase__underline {
+  width: 100%;
+}
+
+body.js-no-touch .project-showcase .project-showcase__image-container:hover .project-showcase__image {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media screen and (min-width: 800px) {
@@ -120,6 +157,7 @@ body.js-no-touch .project-showcase .project-showcase__link {
 }
 
 #other-projects .github-project a h3 {
+  font-weight: 400;
   margin: 0;
 }
 

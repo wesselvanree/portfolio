@@ -40,43 +40,45 @@ class Navigation extends React.Component {
             </div>
           </div>
           <ul className={"navigation__menu "}>
-            <li>
-              <a
-                href="#"
-                onClick={(event) => {
-                  this.toggleMenu();
-                }}
-              >
-                Home
-              </a>
-              <span className="navigation__menu__line"></span>
-            </li>
-            <li>
-              <a
-                href="#"
-                onClick={(event) => {
-                  this.toggleMenu();
-                }}
-              >
-                About
-              </a>
-              <span className="navigation__menu__line"></span>
-            </li>
-            <li>
-              <a
-                href="#"
-                onClick={(event) => {
-                  this.toggleMenu();
-                }}
-              >
-                Contact
-              </a>
-            </li>
+            {links.map((link, index) => (
+              <li key={index}>
+                <a
+                  href={link.url}
+                  onClick={(event) => {
+                    this.toggleMenu();
+                  }}
+                >
+                  {link.text}
+                </a>
+                {index < links.length - 1 ? (
+                  <span className="navigation__menu__line"></span>
+                ) : null}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
     );
   }
 }
+
+const links: Array<NavigationLink> = [
+  {
+    text: "Home",
+    url: "#",
+  },
+  {
+    text: "Projects",
+    url: "#projects",
+  },
+  {
+    text: "Other Projects",
+    url: "#other-projects",
+  },
+  {
+    text: "Contact",
+    url: "#",
+  },
+];
 
 export default Navigation;

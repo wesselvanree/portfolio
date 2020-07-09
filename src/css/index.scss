@@ -1,6 +1,6 @@
 $text: #333;
 $textLight: #333333cc;
-$navigationBackground: white;
+$navigationBackground: #ffffff;
 $navigationSecondaryBackground: #e2e2e2;
 $navigationColor: #333;
 
@@ -26,12 +26,17 @@ body {
 
 // global
 main {
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 h1 {
+  font-size: 2.4em;
+  font-weight: 600;
+}
+
+h2 {
   font-family: "Playfair Display", serif;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 p {
@@ -52,6 +57,10 @@ p {
 
 @media screen and (min-width: 600px) {
   h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
     font-size: 2.4em;
   }
 }
