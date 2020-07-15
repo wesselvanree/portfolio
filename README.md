@@ -10,13 +10,13 @@ Extract this package in the root of your web site. If your site is <code>http://
 
 Insert the following code in the `head` section of your pages:
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=pgl9KQ0kBB">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=pgl9KQ0kBB">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=pgl9KQ0kBB">
-    <link rel="manifest" href="/site.webmanifest?v=pgl9KQ0kBB">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=pgl9KQ0kBB" color="#7398ff">
-    <link rel="shortcut icon" href="/favicon.ico?v=pgl9KQ0kBB">
-    <meta name="msapplication-TileColor" content="#2b5797">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=QEGLKPp5yq">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=QEGLKPp5yq">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=QEGLKPp5yq">
+    <link rel="manifest" href="/site.webmanifest?v=QEGLKPp5yq">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=QEGLKPp5yq" color="#2c73ee">
+    <link rel="shortcut icon" href="/favicon.ico?v=QEGLKPp5yq">
+    <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
 
 *Optional* - Check your favicon with the [favicon checker](https://realfavicongenerator.net/favicon_checker)
