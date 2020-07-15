@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ca2d7a7d.chunk.css",
-    "main.js": "/portfolio/static/js/main.c5cc7eff.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c5cc7eff.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.fa011208.chunk.css",
+    "main.js": "/portfolio/static/js/main.bcac4fc3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bcac4fc3.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.2a996876.chunk.js": "/portfolio/static/js/2.2a996876.chunk.js",
-    "static/js/2.2a996876.chunk.js.map": "/portfolio/static/js/2.2a996876.chunk.js.map",
+    "static/js/2.93943e2f.chunk.js": "/portfolio/static/js/2.93943e2f.chunk.js",
+    "static/js/2.93943e2f.chunk.js.map": "/portfolio/static/js/2.93943e2f.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.547c172bd0247abef68d568eade2fd85.js": "/portfolio/precache-manifest.547c172bd0247abef68d568eade2fd85.js",
+    "precache-manifest.4688f736e0eefd56215f60d18d3229c9.js": "/portfolio/precache-manifest.4688f736e0eefd56215f60d18d3229c9.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.ca2d7a7d.chunk.css.map": "/portfolio/static/css/main.ca2d7a7d.chunk.css.map",
-    "static/js/2.2a996876.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2a996876.chunk.js.LICENSE.txt",
-    "static/media/hydrautronics.jpg": "/portfolio/static/media/hydrautronics.83e72a0e.jpg",
-    "static/media/ivdh.jpg": "/portfolio/static/media/ivdh.d46d2c5e.jpg",
-    "static/media/mmi.jpg": "/portfolio/static/media/mmi.4e9f7f22.jpg"
+    "static/css/main.fa011208.chunk.css.map": "/portfolio/static/css/main.fa011208.chunk.css.map",
+    "static/js/2.93943e2f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.93943e2f.chunk.js.LICENSE.txt",
+    "static/media/contact.jpg": "/portfolio/static/media/contact.02672899.jpg",
+    "static/media/hydrautronics.jpg": "/portfolio/static/media/hydrautronics.f81bdcbe.jpg",
+    "static/media/ivdh.jpg": "/portfolio/static/media/ivdh.8de5445a.jpg",
+    "static/media/mmi.jpg": "/portfolio/static/media/mmi.58790308.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.2a996876.chunk.js",
-    "static/css/main.ca2d7a7d.chunk.css",
-    "static/js/main.c5cc7eff.chunk.js"
+    "static/js/2.93943e2f.chunk.js",
+    "static/css/main.fa011208.chunk.css",
+    "static/js/main.bcac4fc3.chunk.js"
   ]
 }
