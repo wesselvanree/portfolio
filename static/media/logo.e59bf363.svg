@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+  </defs>
+  <g id="Logo" transform="translate(0 0.184)">
+    <rect id="Rectangle_8" data-name="Rectangle 8" class="cls-1" width="1000" height="1000" transform="translate(0 -0.184)"/>
+    <g id="inner" transform="translate(17.072 132.051)">
+      <path id="Path_7" data-name="Path 7" class="cls-2" d="M2336.945,123.449l217.535,728.3H2706.2l-220.362-728.3Z" transform="translate(-2336.945 -123.449)"/>
+      <path id="Path_9" data-name="Path 9" class="cls-2" d="M2709.969,125.318,2490.824,853.624H2339.813l213.579-728.306Z" transform="translate(-1749 -125.318)"/>
+      <path id="Path_8" data-name="Path 8" class="cls-2" d="M2430.339,863.435l-62.906-362.792,108.124-365.329H2609.4l104.316,365.329-60.358,362.792-117.418-444.7Z" transform="translate(-2061.75 -135.313)"/>
+    </g>
+  </g>
+</svg>

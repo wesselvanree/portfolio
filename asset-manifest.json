@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7e90dd85.chunk.css",
-    "main.js": "/portfolio/static/js/main.d41ced12.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.d41ced12.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.93943e2f.chunk.js": "/portfolio/static/js/2.93943e2f.chunk.js",
-    "static/js/2.93943e2f.chunk.js.map": "/portfolio/static/js/2.93943e2f.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.2ea1d69ec7b174c881441dbd5a87aee8.js": "/portfolio/precache-manifest.2ea1d69ec7b174c881441dbd5a87aee8.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.7e90dd85.chunk.css.map": "/portfolio/static/css/main.7e90dd85.chunk.css.map",
-    "static/js/2.93943e2f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.93943e2f.chunk.js.LICENSE.txt",
-    "static/media/contact.jpg": "/portfolio/static/media/contact.02672899.jpg",
-    "static/media/hydrautronics.jpg": "/portfolio/static/media/hydrautronics.f81bdcbe.jpg",
-    "static/media/ivdh.jpg": "/portfolio/static/media/ivdh.8de5445a.jpg",
-    "static/media/mmi.jpg": "/portfolio/static/media/mmi.58790308.jpg"
+    "main.css": "/portfolio-v1/static/css/main.0d2eb84a.chunk.css",
+    "main.js": "/portfolio-v1/static/js/main.34d54157.chunk.js",
+    "main.js.map": "/portfolio-v1/static/js/main.34d54157.chunk.js.map",
+    "runtime-main.js": "/portfolio-v1/static/js/runtime-main.eb342400.js",
+    "runtime-main.js.map": "/portfolio-v1/static/js/runtime-main.eb342400.js.map",
+    "static/js/2.b8880870.chunk.js": "/portfolio-v1/static/js/2.b8880870.chunk.js",
+    "static/js/2.b8880870.chunk.js.map": "/portfolio-v1/static/js/2.b8880870.chunk.js.map",
+    "index.html": "/portfolio-v1/index.html",
+    "precache-manifest.0d47faaf879cbda70e5d6cb2422dabd9.js": "/portfolio-v1/precache-manifest.0d47faaf879cbda70e5d6cb2422dabd9.js",
+    "service-worker.js": "/portfolio-v1/service-worker.js",
+    "static/css/main.0d2eb84a.chunk.css.map": "/portfolio-v1/static/css/main.0d2eb84a.chunk.css.map",
+    "static/media/hydrautronics.png": "/portfolio-v1/static/media/hydrautronics.d23495bb.png",
+    "static/media/ivdh.png": "/portfolio-v1/static/media/ivdh.56b7bb48.png",
+    "static/media/logo.e59bf363.svg": "/portfolio-v1/static/media/logo.e59bf363.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.93943e2f.chunk.js",
-    "static/css/main.7e90dd85.chunk.css",
-    "static/js/main.d41ced12.chunk.js"
+    "static/js/runtime-main.eb342400.js",
+    "static/js/2.b8880870.chunk.js",
+    "static/css/main.0d2eb84a.chunk.css",
+    "static/js/main.34d54157.chunk.js"
   ]
 }
