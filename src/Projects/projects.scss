@@ -40,11 +40,12 @@ $purple: #5355c7;
     .project-showcase__content {
       max-width: 100%;
       margin: auto;
+      padding-bottom: 3px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       position: relative;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       z-index: 1;
       color: inherit;
       text-decoration: none;
@@ -66,14 +67,15 @@ $purple: #5355c7;
 
       .project-showcase__line {
         position: absolute;
-        bottom: -75px;
+        bottom: 0;
         left: 50%;
         display: block;
         width: 1px;
-        height: 70px;
+        height: 60px;
         background-color: $text;
         transition: transform 200ms ease-out;
         transform-origin: top;
+        transform: translateY(100%);
         border-radius: 0;
       }
 
@@ -82,7 +84,7 @@ $purple: #5355c7;
         width: 100%;
         background-color: $text;
         transition: transform 200ms 100ms ease-out;
-        transform: translateY(5px) scaleX(0);
+        transform: translateY(3px) scaleX(0);
         display: block;
       }
     }
@@ -113,11 +115,11 @@ body.js-no-touch {
 
       .project-showcase__content {
         .project-showcase__underline {
-          transform: translateY(5px) scaleX(1);
+          transform: translateY(3px) scaleX(1);
         }
 
         .project-showcase__line {
-          transform: scaleY(0);
+          transform: translateY(100%) scaleY(0);
         }
       }
     }
@@ -126,22 +128,26 @@ body.js-no-touch {
 
 @media screen and (min-width: $breakpoint) {
   .project-showcase-container {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
 
 #other-projects {
-  padding: 20px;
-  padding-bottom: 30px;
+  padding: 60px 20px;
+  padding-bottom: 100px;
   background-color: #e9e9e9;
 
   .other-projects__inner {
     max-width: $max-width;
     margin: auto;
+
+    > a {
+      margin-left: 60px;
+    }
   }
 
   .github-projects {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .github-project {
