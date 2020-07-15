@@ -19,6 +19,7 @@ ReactDOM.render(
 serviceWorker.unregister();
 
 const settings = {
+  animationDuration: 800,
   navigationBreakpoint: 600,
   distanceFromTopMobile: 50,
   distanceFromTopDesktop: 60,
