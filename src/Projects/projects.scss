@@ -75,7 +75,7 @@ $purple: #5355c7;
         background-color: $text;
         transition: transform 200ms ease-out;
         transform-origin: top;
-        transform: translateY(100%);
+        transform: translateY(100%) scaleY(1);
         border-radius: 0;
       }
 
