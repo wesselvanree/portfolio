@@ -25,10 +25,30 @@ const Contact = () => {
             </div>
             <div className="contact__info__element">
               <FontAwesomeIcon icon={faEnvelope} />
-              <p>wesselvanree@chello.nl</p>
+              <a href="mailto:wesselvanree@chello.nl">wesselvanree@chello.nl</a>
+            </div>
+            <div className="contact__info__element">
+              <FontAwesomeIcon icon={faLinkedinIn} />
+              <a
+                href="https://www.linkedin.com/in/wesselvanree/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+            <div className="contact__info__element">
+              <FontAwesomeIcon icon={faGithub} />
+              <a
+                href="https://github.com/wesselvanree"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
             </div>
           </div>
-          <div className="contact__social">
+          {/* <div className="contact__social">
             <a
               href="https://www.linkedin.com/in/wesselvanree/"
               target="_blank"
@@ -46,7 +66,7 @@ const Contact = () => {
             <a href="mailto:wesselvanree@chello.nl">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

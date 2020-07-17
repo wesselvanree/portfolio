@@ -23,10 +23,11 @@ const Project = ({ project }: ProjectProps) => {
           target="_blanc"
           className="project-showcase__image-container"
         >
-          <div
+          <img
             className="project-showcase__image"
-            style={{ backgroundImage: `url(${project.image})` }}
-          ></div>
+            src={project.image}
+            alt={project.imageAlt}
+          />
         </a>
         <div className="project-showcase__link">
           <a className="button-1" target="_blanc" href={project.url}>

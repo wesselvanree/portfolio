@@ -3,6 +3,7 @@ interface Project {
   name: string;
   year: number;
   image: string;
+  imageAlt: string;
   url: string;
 }
 
