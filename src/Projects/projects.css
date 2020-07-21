@@ -175,7 +175,7 @@ body.js-no-touch .project-showcase-container .project-showcase:hover .project-sh
 #other-projects .github-project {
   width: 100%;
   padding: 10px 30px;
-  margin: 20px 0;
+  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

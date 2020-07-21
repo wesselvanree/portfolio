@@ -68,11 +68,11 @@ const links: Array<NavigationLink> = [
     url: "#",
   },
   {
-    text: "Projects",
+    text: "Projecten",
     url: "#projects",
   },
   {
-    text: "Other Projects",
+    text: "Andere Projecten",
     url: "#other-projects",
   },
   {

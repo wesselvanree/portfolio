@@ -18,7 +18,7 @@ const Projects = () => {
       </section>
       <section id="other-projects">
         <div className="other-projects__inner">
-          <h1>Other Projects</h1>
+          <h1>Andere Projecten</h1>
           <div className="github-projects">
             {githubProjects.map((project, index) => (
               <GithubProject key={index} project={project} />
@@ -67,7 +67,7 @@ const githubProjects: Array<GithubProject> = [
   {
     name: "smooth-scrolling",
     url: "https://github.com/wesselvanree/smooth-scrolling",
-    description: "Smooth scrolling voor webpagina's",
+    description: "Vloeiend scrollen op webpagina's",
     topics: ["Typescript"],
   },
   {
