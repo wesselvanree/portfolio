@@ -18,7 +18,7 @@ const Projects = () => {
       </section>
       <section id="other-projects">
         <div className="other-projects__inner">
-          <h2>Other Projects</h2>
+          <h1>Other Projects</h1>
           <div className="github-projects">
             {githubProjects.map((project, index) => (
               <GithubProject key={index} project={project} />

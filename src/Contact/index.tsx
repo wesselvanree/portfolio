@@ -17,7 +17,7 @@ const Contact = () => {
           className="contact__image"
         ></div>
         <div className="contact__content">
-          <h2>Contact</h2>
+          <h1>Contact</h1>
           <div className="contact__info">
             <div className="contact__info__element">
               <FontAwesomeIcon icon={faMapMarkerAlt} />

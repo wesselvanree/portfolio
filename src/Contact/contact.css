@@ -38,12 +38,13 @@
   background-color: white;
 }
 
-#contact .contact__inner .contact__content h2,
+#contact .contact__inner .contact__content h1,
 #contact .contact__inner .contact__content p {
   margin: 0;
 }
 
-#contact .contact__inner .contact__content h2 {
+#contact .contact__inner .contact__content h1 {
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
