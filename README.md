@@ -1,5 +1,5 @@
 # Portfolio
-My personal [portfolio website](https://wesselvanree.com).
+My personal <a href="https://wesselvanree.com/" target="_blank">portfolio website</a>.
 
 ## Scripts
 - Run `npm start` to start the development server.
