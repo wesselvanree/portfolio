@@ -26,10 +26,10 @@ const Projects = () => {
           </div>
           <a
             href="https://github.com/wesselvanree"
-            aria-label="View my github profile"
+            aria-label="Bekijk mijn github profiel"
             target="_blanc"
           >
-            View More on Github
+            Bekijk meer op Github
           </a>
         </div>
       </section>
