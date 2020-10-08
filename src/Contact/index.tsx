@@ -25,7 +25,7 @@ const Contact = () => {
             </div>
             <div className="contact__info__element">
               <FontAwesomeIcon icon={faEnvelope} />
-              <a href="mailto:wesselvanree@chello.nl">wesselvanree@chello.nl</a>
+              <a href="mailto:info@wesselvanree.com">info@wesselvanree.com</a>
             </div>
             <div className="contact__info__element">
               <FontAwesomeIcon icon={faLinkedinIn} />

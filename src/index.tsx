@@ -5,6 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "./ts/smoothScroll.ts";
 import SmoothScroll from "./ts/smoothScroll";
+import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>
