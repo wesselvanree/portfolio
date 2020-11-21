@@ -1,16 +1,18 @@
 import React from "react";
-import Projects from "./Projects";
 import Navigation from "./Navigation";
-import Contact from "./Contact";
+import Home from "./Pages/Home";
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 function App() {
   return (
     <>
       <Navigation />
-      <main>
-        <Projects />
-        <Contact />
-      </main>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Redirect to="/"></Redirect>
+        </Switch>
+      </BrowserRouter>
     </>
   );
 }

@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById( "root" )
 );
 
 // If you want your app to work offline and load faster, you can change
@@ -26,10 +26,10 @@ const settings = {
   distanceFromTopDesktop: 60,
 };
 
-const smoothScroll = new SmoothScroll(settings);
+const smoothScroll = new SmoothScroll( settings );
 
-console.log(smoothScroll);
+console.log( smoothScroll );
 
-if (!smoothScroll.isMobileDevice) {
-  document.querySelector("body")?.classList.add("js-no-touch");
+if ( !smoothScroll.isMobileDevice ) {
+  document.querySelector( "body" )?.classList.add( "js-no-touch" );
 }
