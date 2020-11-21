@@ -19,14 +19,15 @@ ReactDOM.render(
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-const settings = {
+const scrollSettings = {
   animationDuration: 800,
   navigationBreakpoint: 600,
   distanceFromTopMobile: 50,
   distanceFromTopDesktop: 60,
+  changeUrl: false
 };
 
-const smoothScroll = new SmoothScroll( settings );
+const smoothScroll = new SmoothScroll( scrollSettings );
 
 console.log( smoothScroll );
 
