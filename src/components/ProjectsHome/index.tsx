@@ -1,12 +1,12 @@
-import React from "react";
-import "./projects.css";
-import Project from "./Project";
-import GithubProject from "./GithubProject";
+import React from 'react';
+import './projects.scss';
+import Project from './Project';
+import GithubProject from './GithubProject';
 
 // images
-import hydrautronics from "../images/hydrautronics.jpg";
-import ivdh from "../images/ivdh.jpg";
-import mmi from "../images/mmi.jpg";
+import hydrautronics from './images/hydrautronics.jpg';
+import ivdh from './images/ivdh.jpg';
+import mmi from './images/mmi.jpg';
 
 const Projects = () => {
   return (
@@ -40,41 +40,41 @@ const Projects = () => {
 // featured projects
 const projects: Array<Project> = [
   {
-    name: "Hydrautronics",
+    name: 'Hydrautronics',
     year: 2019,
     image: hydrautronics,
-    imageAlt: "Bekijk de website van Hydrautronics",
-    url: "https://hydrautronics.eu",
+    imageAlt: 'Bekijk de website van Hydrautronics',
+    url: 'https://hydrautronics.eu',
   },
   {
-    name: "Ivdh Interieurontwerp",
+    name: 'Ivdh Interieurontwerp',
     year: 2020,
     image: ivdh,
-    imageAlt: "Bekijk de website van Ivdh Interieurontwerp",
-    url: "https://ivdhinterieurontwerp.nl",
+    imageAlt: 'Bekijk de website van Ivdh Interieurontwerp',
+    url: 'https://ivdhinterieurontwerp.nl',
   },
   {
-    name: "MMI",
+    name: 'MMI',
     year: 2019,
     image: mmi,
-    imageAlt: "Bekijk de website over MMI en Maatschappelijke invloeden.",
-    url: "https://wesselvanree.github.io/mmi",
+    imageAlt: 'Bekijk de website over MMI en Maatschappelijke invloeden.',
+    url: 'https://wesselvanree.github.io/mmi',
   },
 ];
 
 // github projects
 const githubProjects: Array<GithubProject> = [
   {
-    name: "smooth-scrolling",
-    url: "https://github.com/wesselvanree/smooth-scrolling",
+    name: 'smooth-scrolling',
+    url: 'https://github.com/wesselvanree/smooth-scrolling',
     description: "Vloeiend scrollen op webpagina's",
-    topics: ["Typescript"],
+    topics: ['Typescript'],
   },
   {
-    name: "vsc-xcode-theme",
-    url: "https://github.com/wesselvanree/vsc-xcode-theme",
-    description: "Een kleurenthema voor Visual Studio Code.",
-    topics: ["json"],
+    name: 'vsc-xcode-theme',
+    url: 'https://github.com/wesselvanree/vsc-xcode-theme',
+    description: 'Een kleurenthema voor Visual Studio Code.',
+    topics: ['json'],
   },
 ];
 

@@ -1,3 +1,5 @@
+@import './utils/variables';
+
 $text: #333;
 $textLight: #333333cc;
 $navigationBackground: #ffffff;
@@ -5,18 +7,16 @@ $navigationSecondaryBackground: #e2e2e2;
 $navigationColor: #333;
 
 // colors
-$blue: #1159d4;
-$purple: #5355c7;
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   color: $text;
   -webkit-font-smoothing: antialiased;
@@ -35,13 +35,18 @@ h1 {
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.4em;
 }
 
 a {
   color: $blue;
   text-decoration: none;
+}
+
+a.grey {
+  color: $color-1;
+  text-decoration: underline;
 }
 
 body.js-no-touch a:hover {

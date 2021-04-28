@@ -1,13 +1,11 @@
-import React from "react";
-import "./contact.css";
-import contact from "../images/contact.jpg";
+import React from 'react';
+import './contact.scss';
+import contact from '../../images/contact.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
-// icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
     <section id="contact">
       <div className="contact__background"></div>
