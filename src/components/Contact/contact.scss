@@ -1,4 +1,4 @@
-$max-width: 1000px;
+@import '../../utils/variables';
 
 #contact {
   position: relative;
@@ -15,7 +15,7 @@ $max-width: 1000px;
 
   .contact__inner {
     padding: 20px;
-    max-width: $max-width;
+    max-width: $main-width;
     margin: auto;
     display: flex;
     flex-direction: column;

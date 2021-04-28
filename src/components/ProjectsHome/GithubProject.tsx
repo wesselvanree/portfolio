@@ -1,14 +1,26 @@
-import React from "react";
+import React from 'react';
 
-const GithubProject = ({ project }: GithubProjectProps) => {
+export interface GithubProjectItem {
+  name: string;
+  url: string;
+  description: string;
+  topics: string[];
+}
+
+const GithubProject = ({
+  name,
+  url,
+  description,
+  topics,
+}: GithubProjectItem) => {
   return (
     <div className="github-project">
-      <a href={project.url} target="_blanc">
-        <h3>{project.name}</h3>
+      <a href={url} target="_blanc">
+        <h3>{name}</h3>
       </a>
-      <p className="github-project__description">{project.description}</p>
+      <p className="github-project__description">{description}</p>
       <div className="github-project__subjects">
-        {project.topics.map((topic, index) => (
+        {topics.map((topic, index) => (
           <span key={index} className="github-project__subject">
             {topic}
           </span>

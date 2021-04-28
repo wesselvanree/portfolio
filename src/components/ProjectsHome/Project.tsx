@@ -1,36 +1,32 @@
-import React from "react";
+import React from 'react';
 
-interface ProjectProps {
-  project: Project;
+export interface ProjectItem {
+  name: string;
+  year: number;
+  image: string;
+  imageAlt: string;
+  url: string;
 }
 
-const Project = ({ project }: ProjectProps) => {
+const Project = ({ name, year, image, imageAlt, url }: ProjectItem) => {
   return (
     <div className="project-showcase-container">
       <div className="project-showcase">
-        <a
-          href={project.url}
-          target="_blanc"
-          className="project-showcase__content"
-        >
-          <p>{project.year}</p>
-          <h2>{project.name}</h2>
+        <a href={url} target="_blanc" className="project-showcase__content">
+          <p>{year}</p>
+          <h2>{name}</h2>
           <span className="project-showcase__line"></span>
           <span className="project-showcase__underline"></span>
         </a>
         <a
-          href={project.url}
+          href={url}
           target="_blanc"
           className="project-showcase__image-container"
         >
-          <img
-            className="project-showcase__image"
-            src={project.image}
-            alt={project.imageAlt}
-          />
+          <img className="project-showcase__image" src={image} alt={imageAlt} />
         </a>
         <div className="project-showcase__link">
-          <a className="button-1" target="_blanc" href={project.url}>
+          <a className="button-1" target="_blanc" href={url}>
             Bezoek pagina
           </a>
         </div>

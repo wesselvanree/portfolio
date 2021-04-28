@@ -6,6 +6,8 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Contact: React.FC = () => {
+  const mail = 'info@wesselvanree.com';
+
   return (
     <section id="contact">
       <div className="contact__background"></div>
@@ -23,7 +25,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="contact__info__element">
               <FontAwesomeIcon icon={faEnvelope} />
-              <a href="mailto:info@wesselvanree.com">info@wesselvanree.com</a>
+              <a href={`mailto:${mail}`}>{mail}</a>
             </div>
             <div className="contact__info__element">
               <FontAwesomeIcon icon={faLinkedinIn} />
@@ -46,25 +48,6 @@ const Contact: React.FC = () => {
               </a>
             </div>
           </div>
-          {/* <div className="contact__social">
-            <a
-              href="https://www.linkedin.com/in/wesselvanree/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </a>
-            <a
-              href="https://github.com/wesselvanree"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href="mailto:wesselvanree@chello.nl">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-          </div> */}
         </div>
       </div>
     </section>
