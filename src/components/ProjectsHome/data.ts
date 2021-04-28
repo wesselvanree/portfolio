@@ -1,8 +1,15 @@
 import { ProjectItem } from './Project';
-import { GithubProjectItem } from './GithubProject';
 import hydrautronics from './images/hydrautronics.jpg';
 import ivdh from './images/ivdh.jpg';
 import mmi from './images/mmi.jpg';
+
+export interface GithubProjectItem {
+  name: string;
+  url: string;
+  description: string;
+  topics: string[];
+  demo?: string;
+}
 
 // featured projects
 export const projects: ProjectItem[] = [
@@ -20,13 +27,13 @@ export const projects: ProjectItem[] = [
     imageAlt: 'Bekijk de website van Ivdh Interieurontwerp',
     url: 'https://ivdhinterieurontwerp.nl',
   },
-  {
-    name: 'MMI',
-    year: 2019,
-    image: mmi,
-    imageAlt: 'Bekijk de website over MMI en Maatschappelijke invloeden.',
-    url: 'https://wesselvanree.github.io/mmi',
-  },
+  // {
+  //   name: 'MMI',
+  //   year: 2019,
+  //   image: mmi,
+  //   imageAlt: 'Bekijk de website over MMI en Maatschappelijke invloeden.',
+  //   url: 'https://wesselvanree.github.io/mmi',
+  // },
 ];
 
 // github projects
@@ -34,13 +41,20 @@ export const githubProjects: GithubProjectItem[] = [
   {
     name: 'smooth-scrolling',
     url: 'https://github.com/wesselvanree/smooth-scrolling',
-    description: "Vloeiend scrollen op webpagina's",
-    topics: ['Typescript'],
+    description: 'Smooth scrolling for webpages.',
+    topics: ['TypeScript'],
   },
   {
     name: 'vsc-xcode-theme',
     url: 'https://github.com/wesselvanree/vsc-xcode-theme',
-    description: 'Een kleurenthema voor Visual Studio Code.',
+    description: 'A color theme for Visual Studio Code',
     topics: ['json'],
+  },
+  {
+    name: 'js-keyup-event',
+    url: 'https://github.com/wesselvanree/js-keyup-event',
+    description: 'A tool to visualize the javascript keyup event properties',
+    topics: ['JavaScript'],
+    demo: 'https://wesselvanree.github.io/js-keyup-event/',
   },
 ];

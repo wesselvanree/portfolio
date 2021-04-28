@@ -21,7 +21,7 @@ const Projects = () => {
       </section>
       <section id="other-projects">
         <div className="other-projects__inner">
-          <h1>Andere Projecten</h1>
+          <h1>Other Projects</h1>
           <div className="github-projects">
             {githubProjects.map(({ description, name, topics, url }, index) => (
               <GithubProject

@@ -1,10 +1,7 @@
 @import './utils/variables';
 
-$text: #333;
-$textLight: #333333cc;
-$navigationBackground: #ffffff;
+$background-primary: #ffffff;
 $navigationSecondaryBackground: #e2e2e2;
-$navigationColor: #333;
 
 // colors
 
@@ -18,10 +15,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  color: $text;
+  color: $text-primary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f4f4f4;
+  background-color: $background-primary;
 }
 
 // global
@@ -58,7 +55,7 @@ body.js-no-touch a:hover {
 }
 
 p {
-  color: $textLight;
+  color: $text-secondary;
 }
 
 .horizontal-flex {
@@ -93,21 +90,22 @@ p {
   width: 100%;
   height: 50px;
   position: fixed;
+  padding: 0 14px;
   top: 0;
   left: 0;
   z-index: 2;
-  color: $navigationColor;
+  color: $text-primary;
 
   .navigation__inner {
     height: 100%;
     width: 100%;
     display: flex;
-    max-width: 1000px;
+    max-width: $width-main;
     margin: auto;
 
     .navigation__label {
       padding: 0 12px;
-      color: $navigationColor;
+      color: $text-primary;
     }
 
     .navigation__bar {
@@ -117,7 +115,7 @@ p {
       height: 50px;
       width: 100%;
       z-index: 1;
-      background-color: $navigationBackground;
+      background-color: $background-primary;
 
       p {
         margin: 0;
@@ -137,7 +135,7 @@ p {
           left: 12px;
           height: 1px;
           width: 50%;
-          background-color: $navigationColor;
+          background-color: $text-primary;
           transition: transform 200ms ease-out;
         }
 
@@ -172,7 +170,7 @@ p {
       left: 0;
       width: 100%;
       padding: 0 30px;
-      background-color: $navigationBackground;
+      background-color: $background-primary;
       list-style-type: none;
       transform: translateY(-100%);
       transition: transform 200ms ease-out;
@@ -182,7 +180,7 @@ p {
       .navigation__menu__line {
         height: 1px;
         width: 100%;
-        background-color: $navigationSecondaryBackground;
+        background-color: $seperator;
         display: block;
         opacity: 0;
         transition: opacity 200ms 150ms ease-out;
@@ -239,10 +237,8 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-  $navigationBackground: #f4f4f4;
-
   #navigation {
-    background-color: $navigationBackground;
+    background-color: $background-primary;
     height: 60px;
 
     .navigation__inner {
@@ -254,8 +250,9 @@ p {
         background-color: initial;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         height: 100%;
-        padding: 0 20px;
+        padding: 0;
 
         .hamburger {
           display: none;
@@ -265,14 +262,13 @@ p {
       .navigation__menu {
         position: initial;
         padding: 0;
-        padding-right: 30px;
         transform: initial;
         box-shadow: none;
         z-index: 1;
         display: flex;
         align-items: center;
         width: initial;
-        background-color: $navigationBackground;
+        background-color: $background-primary;
 
         li {
           opacity: 1;

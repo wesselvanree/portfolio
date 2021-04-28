@@ -1,11 +1,5 @@
 import React from 'react';
-
-export interface GithubProjectItem {
-  name: string;
-  url: string;
-  description: string;
-  topics: string[];
-}
+import { GithubProjectItem } from './data';
 
 const GithubProject = ({
   name,
