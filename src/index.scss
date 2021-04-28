@@ -34,11 +34,11 @@ h4 {
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.9em;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 a {
@@ -106,6 +106,8 @@ p {
     .navigation__label {
       padding: 0 12px;
       color: $text-primary;
+      font-size: 1em;
+      font-weight: 400;
     }
 
     .navigation__bar {
@@ -244,6 +246,11 @@ p {
     .navigation__inner {
       display: flex;
       justify-content: space-between;
+
+      .navigation__label {
+        padding: 0;
+        font-size: 1.1em;
+      }
 
       .navigation__bar {
         width: initial;

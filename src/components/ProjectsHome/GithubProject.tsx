@@ -1,11 +1,13 @@
 import React from 'react';
 import { GithubProjectItem } from './data';
+import ButtonLink from '../ButtonLink';
 
 const GithubProject = ({
   name,
   url,
   description,
   topics,
+  demoUrl,
 }: GithubProjectItem) => {
   return (
     <div className="github-project">
@@ -20,6 +22,15 @@ const GithubProject = ({
           </span>
         ))}
       </div>
+      {typeof demoUrl !== 'undefined' ? (
+        <ButtonLink
+          style={{ marginTop: '20px' }}
+          label="View Demo"
+          url={demoUrl}
+        />
+      ) : (
+        ''
+      )}
     </div>
   );
 };

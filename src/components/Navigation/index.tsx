@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react';
 
 class Navigation extends React.Component {
   toggleMenu() {
     const navigationMenu = document.querySelector(
-      ".navigation__menu"
+      '.navigation__menu',
     ) as HTMLElement;
 
-    const hamburger = document.querySelector(".hamburger") as HTMLElement;
+    const hamburger = document.querySelector('.hamburger') as HTMLElement;
 
     if (window.innerWidth < 600) {
-      if (navigationMenu.classList.contains("visible")) {
-        navigationMenu.classList.add("is-closing");
-        navigationMenu.classList.remove("visible");
-        hamburger.classList.remove("active");
+      if (navigationMenu.classList.contains('visible')) {
+        navigationMenu.classList.add('is-closing');
+        navigationMenu.classList.remove('visible');
+        hamburger.classList.remove('active');
         setTimeout(() => {
-          navigationMenu.classList.remove("is-closing");
+          navigationMenu.classList.remove('is-closing');
         }, 500);
       } else {
-        navigationMenu.classList.add("visible");
-        hamburger.classList.add("active");
+        navigationMenu.classList.add('visible');
+        hamburger.classList.add('active');
       }
     }
   }
@@ -28,7 +28,7 @@ class Navigation extends React.Component {
       <div id="navigation">
         <div className="navigation__inner">
           <div className="navigation__bar">
-            <p className="navigation__label">Wessel van Ree</p>
+            <h3 className="navigation__label">Wessel van Ree</h3>
             <div
               className="hamburger"
               onClick={(event) => {
@@ -39,7 +39,7 @@ class Navigation extends React.Component {
               <div className="hamburger__line hamburger__line--bottom"></div>
             </div>
           </div>
-          <ul className={"navigation__menu "}>
+          <ul className={'navigation__menu '}>
             {links.map((link, index) => (
               <li key={index}>
                 <a
@@ -62,22 +62,22 @@ class Navigation extends React.Component {
   }
 }
 
-const links: Array<NavigationLink> = [
+const links: NavigationLink[] = [
   {
-    text: "Home",
-    url: "#",
+    text: 'Home',
+    url: '#',
   },
   {
-    text: "Projecten",
-    url: "#projects",
+    text: 'Projects',
+    url: '#projects',
   },
   {
-    text: "Andere Projecten",
-    url: "#other-projects",
+    text: 'Other Projects',
+    url: '#other-projects',
   },
   {
-    text: "Contact",
-    url: "#contact",
+    text: 'Contact',
+    url: '#contact',
   },
 ];
 

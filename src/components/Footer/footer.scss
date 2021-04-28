@@ -3,7 +3,7 @@
 footer {
   width: 100%;
   padding: 0 14px;
-  background-color: $background-tertiary;
+  background-color: $background-secondary;
   color: $text-primary;
   font-size: 14px;
 
@@ -47,7 +47,7 @@ footer {
 }
 
 .footer--left {
-  width: 50%;
+  width: 100%;
 }
 
 .footer--right {
@@ -80,6 +80,10 @@ footer {
   .footer--top {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .footer--left {
+    width: 50%;
   }
 
   .footer--right {

@@ -5,6 +5,25 @@ import GithubProject from './GithubProject';
 import { projects, githubProjects } from './data';
 
 const Projects = () => {
+  const githubProfile = 'https://github.com/wesselvanree';
+
+  const githubProjectsList = githubProjects
+    .sort((a, b) => {
+      if (a.name < b.name) return -1;
+      if (a.name > b.name) return 1;
+      return 0;
+    })
+    .map(({ description, name, topics, url, demoUrl }, index) => (
+      <GithubProject
+        key={index}
+        description={description}
+        name={name}
+        topics={topics}
+        url={url}
+        demoUrl={demoUrl}
+      />
+    ));
+
   return (
     <>
       <section id="projects">
@@ -22,24 +41,22 @@ const Projects = () => {
       <section id="other-projects">
         <div className="other-projects__inner">
           <h1>Other Projects</h1>
-          <div className="github-projects">
-            {githubProjects.map(({ description, name, topics, url }, index) => (
-              <GithubProject
-                key={index}
-                description={description}
-                name={name}
-                topics={topics}
-                url={url}
-              />
-            ))}
-          </div>
-          <a
-            href="https://github.com/wesselvanree"
-            aria-label="Bekijk mijn github profiel"
-            target="_blanc"
+          <div className="github-projects">{githubProjectsList}</div>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              padding: '0 10px',
+            }}
           >
-            Bekijk meer op Github
-          </a>
+            <a
+              href={githubProfile}
+              aria-label="View my github profile"
+              target="_blanc"
+            >
+              View more on Github
+            </a>
+          </div>
         </div>
       </section>
     </>

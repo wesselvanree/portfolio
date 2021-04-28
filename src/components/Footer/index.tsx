@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.scss';
-import ExternalLink from './ExternalLink';
+import ExternalLink from '../ExternalLink';
 import { socials } from './data';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

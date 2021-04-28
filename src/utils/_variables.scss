@@ -1,5 +1,6 @@
 // Sizes
 $width-main: 1000px;
+$width-main10: 1020px;
 
 // GLOBAL VARIABLES
 // -Dark means darkmode value of the variable
@@ -22,8 +23,8 @@ $max-main-width: 1000px;
 $mobile-padding: 14px;
 
 // Backgrounds
-$background-primary: #ebedf3;
-$background-secondary: #f2f2f8;
+$background-primary: #fafbff;
+$background-secondary: #f2f2f6;
 $background-tertiary: #e6e6ec;
 
 $background-primary-dark: #141416; // #1c1c1e; #151516;
@@ -43,28 +44,31 @@ $text-tertiary: #3c3c44b3; // #3c3c434d
 $text-quarternary: #3c3c4480;
 
 $text-primary-dark: #f8f8fc;
-$text-secondary-dark: hsla(240, 20%, 90%, 0.806);
+$text-secondary-dark: #e0e0ebce;
 $text-tertiary-dark: #ececf3a1;
 $text-quarternary-dark: #ebebf52e;
 
 // Branding colors
 $primary-color-light: #c7d5e0;
 $primary-color: #467599;
+$primary-color-hover: #4e82aa;
 $primary-color-dark: #4b77d8; // #365db3
 
 // Colors
 $red: #ff3b30;
-$red-dark: #ff453a;
 $orange: #ff9500;
-$orange-dark: #ff9f0a;
 $green: #34c759;
-$green-dark: #32d74b;
 $teal: #5ac8fa;
-$teal-dark: #64d2ff;
 $blue: #1159d4;
-$blue-dark: #2385e7;
+$blue-hover: #2469e0;
 $indigo: #5856d6;
+
+$red-dark: #ff453a;
+$orange-dark: #ff9f0a;
+$green-dark: #32d74b;
+$teal-dark: #64d2ff;
+$blue-dark: #2385e7;
 $indigo-dark: #5e5ce6;
 
-// Breakpoint
+// Breakpoints
 $breakpoint-tablet: 798px;

@@ -7,7 +7,7 @@ export interface GithubProjectItem {
   url: string;
   description: string;
   topics: string[];
-  demo?: string;
+  demoUrl?: string;
 }
 
 // featured projects
@@ -35,11 +35,12 @@ export const githubProjects: GithubProjectItem[] = [
     url: 'https://github.com/wesselvanree/smooth-scrolling',
     description: 'Smooth scrolling for webpages.',
     topics: ['TypeScript'],
+    demoUrl: 'https://wesselvanree.github.io/smooth-scrolling/',
   },
   {
     name: 'vsc-xcode-theme',
     url: 'https://github.com/wesselvanree/vsc-xcode-theme',
-    description: 'A color theme for Visual Studio Code',
+    description: 'A color theme for Visual Studio Code.',
     topics: ['json'],
   },
   {
@@ -47,6 +48,6 @@ export const githubProjects: GithubProjectItem[] = [
     url: 'https://github.com/wesselvanree/js-keyup-event',
     description: 'A tool to visualize the javascript keyup event properties',
     topics: ['JavaScript'],
-    demo: 'https://wesselvanree.github.io/js-keyup-event/',
+    demoUrl: 'https://wesselvanree.github.io/js-keyup-event/',
   },
 ];

@@ -1,0 +1,25 @@
+@import '../../utils/variables';
+
+a.button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 200ms ease-out;
+  text-decoration: none;
+  position: relative;
+  text-decoration: none !important;
+  color: white !important;
+  background-color: $primary-color;
+  font-size: 0.9em;
+}
+
+a.button:hover {
+  background-color: $primary-color-hover;
+}
+
+a.button.button-secondary {
+  background-color: $blue !important;
+}
+
+a.button.button-secondary:hover {
+  background-color: $blue-hover !important;
+}

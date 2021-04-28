@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="contact__wrapper">
         <div className="contact__inner">
           <h1>
-            Interesting project? Let's work together.<br></br>
+            Interesting project? Let's&nbsp;work&nbsp;together.<br></br>
             <a href={`mailto:${mail}`}>{mail}</a>
           </h1>
         </div>

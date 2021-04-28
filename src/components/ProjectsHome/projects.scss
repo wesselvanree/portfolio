@@ -1,10 +1,4 @@
-$text: #333;
-$breakpoint: 800px;
-$max-width: 600px;
-
-// colors
-$blue: #1159d4;
-$purple: #5355c7;
+@import '../../utils/variables';
 
 .project-showcase-container {
   padding: 20px;
@@ -14,14 +8,14 @@ $purple: #5355c7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px;
+    max-width: $width-main;
     margin: auto;
     position: relative;
 
     .project-showcase__image-container {
       width: 100%;
       height: 54vw;
-      max-height: 360px;
+      max-height: 440px;
       overflow: hidden;
 
       .project-showcase__image {
@@ -72,7 +66,7 @@ $purple: #5355c7;
         display: block;
         width: 1px;
         height: 60px;
-        background-color: $text;
+        background-color: $text-primary;
         transition: transform 200ms ease-out;
         transform-origin: top;
         transform: translateY(100%) scaleY(1);
@@ -82,7 +76,7 @@ $purple: #5355c7;
       .project-showcase__underline {
         height: 1px;
         width: 100%;
-        background-color: $text;
+        background-color: $text-primary;
         transition: transform 200ms 100ms ease-out;
         transform: translateY(3px) scaleX(0);
         display: block;
@@ -126,41 +120,40 @@ body.js-no-touch {
   }
 }
 
-@media screen and (min-width: $breakpoint) {
-  .project-showcase-container {
-    margin-bottom: 30px;
-  }
-}
-
 #other-projects {
-  padding: 60px 20px;
-  padding-bottom: 100px;
-  background-color: #e9e9e9;
+  padding: 0 20px;
+  padding-bottom: 140px;
+  margin-top: 100px;
 
   .other-projects__inner {
-    max-width: $max-width;
+    width: 100%;
+    max-width: $width-main10;
     margin: auto;
 
     > a {
-      margin-left: 60px;
+      margin: auto;
     }
   }
 
   .github-projects {
     margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .github-project {
     width: 100%;
-    // background-color: #f4f4f4;
-    padding: 10px 30px;
+    padding: 20px;
     margin: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border-radius: 8px;
+    background-color: $background-secondary;
 
     a {
-      color: $blue;
+      color: $primary-color;
       text-decoration: none;
       margin: 0;
 
@@ -172,7 +165,7 @@ body.js-no-touch {
     .github-project__description {
       margin: 0;
       margin-top: 10px;
-      color: #333;
+      color: $text-primary;
     }
 
     .github-project__subjects {
@@ -182,11 +175,12 @@ body.js-no-touch {
 
       .github-project__subject {
         display: block;
-        font-size: 0.9em;
-        font-style: italic;
+        font-size: 0.8em;
         opacity: 0.8;
-        margin: 14px 0 0 20px;
+        margin-top: 14px;
+        margin-right: 20px;
         border-radius: 200px;
+        padding: 4px 0;
       }
     }
   }
@@ -198,6 +192,28 @@ body.js-no-touch {
       a:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .project-showcase-container {
+    margin-bottom: 30px;
+  }
+
+  #other-projects {
+    .other-projects__inner {
+      h1 {
+        padding: 0 10px;
+      }
+    }
+
+    .github-projects {
+      flex-direction: row;
+    }
+
+    .github-project {
+      margin: 10px;
     }
   }
 }
