@@ -29,13 +29,18 @@ main {
   padding-top: 120px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
 h1 {
   font-size: 1.8em;
-  font-weight: 700;
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
   font-size: 1.4em;
 }
 
@@ -46,7 +51,6 @@ a {
 
 a.grey {
   color: $text-secondary;
-  text-decoration: underline;
 }
 
 body.js-no-touch a:hover {
@@ -55,6 +59,11 @@ body.js-no-touch a:hover {
 
 p {
   color: $textLight;
+}
+
+.horizontal-flex {
+  display: flex;
+  align-items: center;
 }
 
 .button-1 {
