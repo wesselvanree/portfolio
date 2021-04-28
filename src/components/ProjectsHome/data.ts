@@ -1,7 +1,6 @@
 import { ProjectItem } from './Project';
 import hydrautronics from './images/hydrautronics.jpg';
 import ivdh from './images/ivdh.jpg';
-import mmi from './images/mmi.jpg';
 
 export interface GithubProjectItem {
   name: string;
@@ -27,13 +26,6 @@ export const projects: ProjectItem[] = [
     imageAlt: 'Bekijk de website van Ivdh Interieurontwerp',
     url: 'https://ivdhinterieurontwerp.nl',
   },
-  // {
-  //   name: 'MMI',
-  //   year: 2019,
-  //   image: mmi,
-  //   imageAlt: 'Bekijk de website over MMI en Maatschappelijke invloeden.',
-  //   url: 'https://wesselvanree.github.io/mmi',
-  // },
 ];
 
 // github projects
