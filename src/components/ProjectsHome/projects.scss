@@ -2,7 +2,7 @@
 
 .project-showcase-container {
   padding: 20px;
-  padding-top: 140px;
+  padding-top: 100px;
 
   .project-showcase {
     display: flex;
@@ -87,7 +87,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      padding: 30px 20px;
+      padding: 20px;
     }
   }
 }
@@ -121,18 +121,18 @@ body.js-no-touch {
 }
 
 #other-projects {
-  padding: 0 20px;
-  padding-bottom: 140px;
-  margin-top: 100px;
+  padding: 20px 20px;
+  padding-bottom: 80px;
+  margin-top: 20px;
+
+  h1 {
+    margin: 10px 0;
+  }
 
   .other-projects__inner {
     width: 100%;
     max-width: $width-main10;
     margin: auto;
-
-    > a {
-      margin: auto;
-    }
   }
 
   .github-projects {
@@ -149,7 +149,7 @@ body.js-no-touch {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: $background-secondary;
 
     a {
@@ -198,10 +198,14 @@ body.js-no-touch {
 
 @media screen and (min-width: $breakpoint-tablet) {
   .project-showcase-container {
-    margin-bottom: 30px;
+    padding-top: 140px;
+    margin-bottom: 60px;
   }
 
   #other-projects {
+    padding-top: 140px;
+    padding-bottom: 280px;
+
     .other-projects__inner {
       h1 {
         padding: 0 10px;

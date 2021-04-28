@@ -36,7 +36,7 @@ const Footer = () => {
             className="horizontal-flex footer-grey"
           >
             <FontAwesomeIcon style={{ opacity: 0.8 }} icon={faMapMarkerAlt} />
-            <p style={{ margin: '0 0 0 10px' }}>Netherlands</p>
+            <p style={{ margin: '0 0 0 7px' }}>Netherlands</p>
           </div>
         </div>
         <div className="footer-column footer--right">

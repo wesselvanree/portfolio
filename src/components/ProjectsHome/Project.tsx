@@ -26,8 +26,13 @@ const Project = ({ name, year, image, imageAlt, url }: ProjectItem) => {
           <img className="project-showcase__image" src={image} alt={imageAlt} />
         </a>
         <div className="project-showcase__link">
-          <a className="button-1" target="_blanc" href={url}>
-            Bezoek pagina
+          <a
+            className="button-1"
+            target="_blanc"
+            href={url}
+            rel="noopener noreferrer"
+          >
+            Visit page
           </a>
         </div>
       </div>
