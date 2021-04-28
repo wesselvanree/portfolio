@@ -1,6 +1,6 @@
 // Sizes
-$width-main: 1000px;
-$width-main10: 1020px;
+$width-main: 980px;
+$width-main-20: 1000px;
 
 // GLOBAL VARIABLES
 // -Dark means darkmode value of the variable
@@ -41,7 +41,7 @@ $seperator-transparent-dark: #545458a6;
 $text-primary: #3c3c43;
 $text-secondary: #3c3c44d7; // #3c3c4399
 $text-tertiary: #3c3c44b3; // #3c3c434d
-$text-quarternary: #3c3c4480;
+$text-quarternary: hsla(240, 6%, 25%, 0.502);
 
 $text-primary-dark: #f8f8fc;
 $text-secondary-dark: #e0e0ebce;

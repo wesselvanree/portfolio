@@ -32,7 +32,7 @@ const Footer = () => {
             Rotterdam.
           </p>
           <div
-            style={{ marginTop: '30px', marginBottom: 0, paddingLeft: '2px' }}
+            style={{ marginTop: '14px', marginBottom: 0, paddingLeft: '2px' }}
             className="horizontal-flex footer-grey"
           >
             <FontAwesomeIcon style={{ opacity: 0.8 }} icon={faMapMarkerAlt} />

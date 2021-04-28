@@ -23,8 +23,6 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-        // border-radius: 8px;
-        // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
         position: relative;
         transition: transform 200ms ease-out;
         transform: scale(1.1);
@@ -131,14 +129,13 @@ body.js-no-touch {
 
   .other-projects__inner {
     width: 100%;
-    max-width: $width-main10;
+    max-width: $width-main-20;
     margin: auto;
   }
 
   .github-projects {
     margin-bottom: 30px;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
   }
 
@@ -149,6 +146,7 @@ body.js-no-touch {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     border-radius: 6px;
     background-color: $background-secondary;
 
@@ -176,11 +174,11 @@ body.js-no-touch {
       .github-project__subject {
         display: block;
         font-size: 0.8em;
-        opacity: 0.8;
-        margin-top: 14px;
+        color: $text-tertiary;
+        margin-top: 10px;
         margin-right: 20px;
         border-radius: 200px;
-        padding: 4px 0;
+        padding: 0;
       }
     }
   }
@@ -203,8 +201,8 @@ body.js-no-touch {
   }
 
   #other-projects {
-    padding-top: 140px;
-    padding-bottom: 280px;
+    padding-top: 60px;
+    padding-bottom: 180px;
 
     .other-projects__inner {
       h1 {

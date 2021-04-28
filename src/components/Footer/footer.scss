@@ -14,13 +14,18 @@ footer {
     margin-bottom: 6px;
   }
 
-  h4 {
-    margin-top: 10px;
+  p {
+    margin: 10px 0;
   }
 
-  p,
+  a.grey {
+    color: $text-tertiary;
+  }
+
   h4 {
-    margin: 10px 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
   }
 }
 
@@ -29,7 +34,7 @@ footer {
 }
 
 .footer-grey {
-  color: $text-secondary;
+  color: $text-tertiary;
 }
 
 .footer--top,
@@ -44,6 +49,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 40px 0;
+  padding-bottom: 20px;
 }
 
 .footer--left {
@@ -51,7 +57,7 @@ footer {
 }
 
 .footer--right {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 1.1em;
 
   ul {
@@ -67,19 +73,27 @@ footer {
 
 .footer--bottom {
   border-top: 1px solid $seperator;
-  padding: 10px 0;
   font-size: 13px;
+  color: $text-tertiary;
+  padding: 10px 0;
   padding-bottom: 20px;
 
   p {
     margin: 0;
+    font-size: 1em;
   }
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
   .footer--top {
+    padding-top: 50px;
+    padding-bottom: 30px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .footer--bottom {
+    padding-bottom: 30px;
   }
 
   .footer--left {
