@@ -34,12 +34,12 @@ footer {
 
 .footer--top,
 .footer--bottom {
-  max-width: $main-width;
+  max-width: $width-main;
   margin: auto;
 }
 
 .footer--top {
-  max-width: $main-width;
+  max-width: $width-main;
   margin: auto;
   display: flex;
   flex-direction: column;
