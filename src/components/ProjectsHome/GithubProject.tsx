@@ -12,7 +12,7 @@ const GithubProject = ({
   return (
     <div className="github-project">
       <div>
-        <a href={url} target="_blanc">
+        <a href={url} className="primary hover-underline" target="_blanc">
           <h3>{name}</h3>
         </a>
         <p className="github-project__description">{description}</p>
@@ -28,7 +28,7 @@ const GithubProject = ({
         <ButtonLink
           style={{ marginTop: '20px' }}
           label="View Demo"
-          url={demoUrl}
+          href={demoUrl}
         />
       ) : (
         ''

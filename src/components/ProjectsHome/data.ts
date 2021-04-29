@@ -44,10 +44,10 @@ export const githubProjects: GithubProjectItem[] = [
     topics: ['json'],
   },
   {
-    name: 'js-keyup-event',
-    url: 'https://github.com/wesselvanree/js-keyup-event',
-    description: 'A tool to visualize the javascript keyup event properties',
+    name: 'js-keyboard-event',
+    url: 'https://github.com/wesselvanree/js-keyboard-event',
+    description: 'A tool to visualize the javascript keyboard event properties',
     topics: ['JavaScript'],
-    demoUrl: 'https://wesselvanree.github.io/js-keyup-event/',
+    demoUrl: 'https://wesselvanree.github.io/js-keyboard-event/',
   },
 ];

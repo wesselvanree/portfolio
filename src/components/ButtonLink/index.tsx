@@ -4,19 +4,39 @@ import './ButtonLink.scss';
 
 type Props = {
   label: string;
-  url: string;
+  href: string;
   style?: React.CSSProperties;
   color?: 'primary' | 'secondary';
+  external?: boolean;
+  size?: 'normal' | 'large';
+  ariaLabel?: string;
 };
 
-const ButtonLink = ({ label, url, color = 'primary', style }: Props) => {
+const ButtonLink = ({
+  label,
+  href,
+  color = 'primary',
+  style,
+  external = true,
+  size = 'normal',
+  ariaLabel = '',
+}: Props) => {
   return (
-    <ExternalLink
-      style={style}
-      text={label}
-      url={url}
-      className={`button button-${color}`}
-    />
+    <>
+      {external ? (
+        <ExternalLink
+          style={style}
+          label={label}
+          href={href}
+          className={`button button-${color} size-${size}`}
+          ariaLabel={ariaLabel}
+        />
+      ) : (
+        <a href={href} aria-label={ariaLabel}>
+          {label}
+        </a>
+      )}
+    </>
   );
 };
 

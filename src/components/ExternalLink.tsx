@@ -1,27 +1,30 @@
 import React from 'react';
 
 interface Props {
-  text: string;
-  url: string;
+  label: string;
+  href: string;
   className?: string;
   style?: React.CSSProperties;
+  ariaLabel?: string;
 }
 
 export const ExternalLink = ({
-  text,
-  url,
+  label,
+  href,
   className,
   style,
+  ariaLabel = '',
 }: Props): JSX.Element => {
   return (
     <a
-      href={url}
+      href={href}
       className={typeof className === 'undefined' ? '' : className}
       target="_blank"
       rel="noopener noreferrer"
       style={style}
+      aria-label={ariaLabel}
     >
-      {text}
+      {label}
     </a>
   );
 };

@@ -11,7 +11,7 @@ const Footer = () => {
     .map(({ name, url, external }, i) => (
       <li key={i}>
         {external ? (
-          <ExternalLink text={name} url={url} className="grey" />
+          <ExternalLink label={name} href={url} className="grey" />
         ) : (
           <a className="grey" href={url}>
             {name}

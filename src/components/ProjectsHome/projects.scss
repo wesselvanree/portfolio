@@ -134,7 +134,7 @@ body.js-no-touch {
   }
 
   .github-projects {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
   }
@@ -151,8 +151,6 @@ body.js-no-touch {
     background-color: $background-secondary;
 
     a {
-      color: $primary-color;
-      text-decoration: none;
       margin: 0;
 
       h3 {
@@ -179,16 +177,6 @@ body.js-no-touch {
         margin-right: 20px;
         border-radius: 200px;
         padding: 0;
-      }
-    }
-  }
-}
-
-body.js-no-touch {
-  #other-projects {
-    .github-project {
-      a:hover {
-        text-decoration: underline;
       }
     }
   }

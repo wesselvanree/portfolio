@@ -3,6 +3,7 @@ import './projects.scss';
 import Project from './Project';
 import GithubProject from './GithubProject';
 import { projects, githubProjects } from './data';
+import ButtonLink from '../ButtonLink';
 
 const Projects = () => {
   const githubProfile = 'https://github.com/wesselvanree';
@@ -49,13 +50,13 @@ const Projects = () => {
               padding: '0 10px',
             }}
           >
-            <a
+            <ButtonLink
               href={githubProfile}
-              aria-label="View my github profile"
-              target="_blanc"
-            >
-              View more on Github
-            </a>
+              label="View more on Github"
+              ariaLabel="View mt Github profile"
+              size="large"
+              color="secondary"
+            />
           </div>
         </div>
       </section>

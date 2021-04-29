@@ -1,8 +1,5 @@
 @import './utils/variables';
 
-$background-primary: #ffffff;
-$navigationSecondaryBackground: #e2e2e2;
-
 // colors
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
@@ -48,6 +45,16 @@ a {
 
 a.grey {
   color: $text-secondary;
+}
+
+a.primary {
+  color: $primary-color;
+}
+
+body.js-no-touch {
+  a.underline-hover:hover {
+    text-decoration: underline;
+  }
 }
 
 body.js-no-touch a:hover {
