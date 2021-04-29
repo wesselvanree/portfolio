@@ -1,0 +1,75 @@
+// Sizes
+$width-main: 980px;
+$width-main-20: 1000px;
+
+// GLOBAL VARIABLES
+// -Dark means darkmode value of the variable
+
+// Fonts
+$sans-serif-font: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+  'Helvetica', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+  sans-serif;
+$serif-font: Georgia, 'Times New Roman', Times, serif;
+
+$main-font: $sans-serif-font;
+$article-content-font: $sans-serif-font;
+$articleHeadingFont: $sans-serif-font;
+
+// Spacing
+$article-content-with-padding: 656px;
+$article-content: 684px;
+$article-content-wide: 860px;
+$max-main-width: 1000px;
+$mobile-padding: 14px;
+
+// Backgrounds
+$background-primary: #fafbff;
+$background-secondary: #f0f0f5;
+$background-tertiary: #e6e6ec;
+$background-quarternary: #d4d4e0;
+
+$background-primary-dark: #141416; // #1c1c1e; #151516;
+$background-secondary-dark: #1f1f23; // #2c2c2e; #212127;
+$background-tertiary-dark: #303036; // #3a3a3c;
+
+// Seperators
+$seperator: #c6c6c8;
+$seperator-transparent: #b1b1b44d;
+$seperator-dark: #38383a;
+$seperator-transparent-dark: #545458a6;
+
+// Text
+$text-primary: #3c3c43;
+$text-secondary: #3c3c44d7; // #3c3c4399
+$text-tertiary: #3c3c44b3; // #3c3c434d
+$text-quarternary: hsla(240, 6%, 25%, 0.502);
+
+$text-primary-dark: #f8f8fc;
+$text-secondary-dark: #e0e0ebce;
+$text-tertiary-dark: #ececf3a1;
+$text-quarternary-dark: #ebebf52e;
+
+// Branding colors
+$primary-color-light: #cbd9ec; // #c7d5e0;
+$primary-color: #3e6eac; // #467599
+$primary-color-hover: hsl(214, 47%, 52%);
+$primary-color-dark: #4b77d8; // #365db3
+
+// Colors
+$red: #ff3b30;
+$orange: #ff9500;
+$green: #34c759;
+$teal: #5ac8fa;
+$blue: #1159d4;
+$blue-hover: #2469e0;
+$indigo: #5856d6;
+
+$red-dark: #ff453a;
+$orange-dark: #ff9f0a;
+$green-dark: #32d74b;
+$teal-dark: #64d2ff;
+$blue-dark: #2385e7;
+$indigo-dark: #5e5ce6;
+
+// Breakpoints
+$breakpoint-tablet: 798px;

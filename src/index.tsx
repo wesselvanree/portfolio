@@ -1,17 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./css/index.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
-import "./ts/smoothScroll.ts";
-import SmoothScroll from "./ts/smoothScroll";
-import "./i18n";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.scss';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+import './utils/smoothScroll.ts';
+import SmoothScroll from './utils/smoothScroll';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById( "root" )
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
@@ -24,13 +23,13 @@ const scrollSettings = {
   navigationBreakpoint: 600,
   distanceFromTopMobile: 50,
   distanceFromTopDesktop: 60,
-  changeUrl: false
+  changeUrl: false,
 };
 
-const smoothScroll = new SmoothScroll( scrollSettings );
+const smoothScroll = new SmoothScroll(scrollSettings);
 
-console.log( smoothScroll );
+console.log(smoothScroll);
 
-if ( !smoothScroll.isMobileDevice ) {
-  document.querySelector( "body" )?.classList.add( "js-no-touch" );
+if (!smoothScroll.isMobileDevice) {
+  document.querySelector('body')?.classList.add('js-no-touch');
 }

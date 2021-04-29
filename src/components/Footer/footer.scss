@@ -1,0 +1,111 @@
+@import '../../utils/variables';
+
+footer {
+  width: 100%;
+  padding: 0 20px;
+  background-color: $background-secondary;
+  color: $text-primary;
+  font-size: 14px;
+
+  h3 {
+    font-weight: 500;
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 6px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  a.grey {
+    color: $text-tertiary;
+  }
+
+  h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+.footer-paragraph {
+  font-size: 1.2em;
+}
+
+.footer-grey {
+  color: $text-tertiary;
+}
+
+.footer--top,
+.footer--bottom {
+  max-width: $width-main;
+  margin: auto;
+}
+
+.footer--top {
+  max-width: $width-main;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  padding-bottom: 20px;
+}
+
+.footer--left {
+  width: 100%;
+}
+
+.footer--right {
+  margin-top: 20px;
+  font-size: 1.1em;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+}
+
+.footer--bottom {
+  border-top: 1px solid $seperator;
+  font-size: 13px;
+  color: $text-tertiary;
+  padding: 10px 0;
+  padding-bottom: 20px;
+
+  p {
+    margin: 0;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .footer--top {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer--bottom {
+    padding-bottom: 30px;
+  }
+
+  .footer--left {
+    width: 50%;
+  }
+
+  .footer--right {
+    margin: 0;
+  }
+
+  .footer-column {
+    width: 20%;
+    padding-right: 20px;
+  }
+}

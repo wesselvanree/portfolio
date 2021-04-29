@@ -1,42 +1,41 @@
-$text: #333;
-$textLight: #333333cc;
-$navigationBackground: #ffffff;
-$navigationSecondaryBackground: #e2e2e2;
-$navigationColor: #333;
+@import './utils/variables';
 
 // colors
-$blue: #1159d4;
-$purple: #5355c7;
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  color: $text;
+  color: $text-primary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f4f4f4;
+  background-color: $background-primary;
 }
 
 // global
 main {
-  padding-top: 120px;
+  padding-top: 80px;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 500;
 }
 
 h1 {
-  font-size: 1.8em;
-  font-weight: 700;
+  font-size: 1.9em;
+  font-weight: 600;
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 a {
@@ -44,12 +43,31 @@ a {
   text-decoration: none;
 }
 
+a.grey {
+  color: $text-secondary;
+}
+
+a.primary {
+  color: $primary-color;
+}
+
+body.js-no-touch {
+  a.underline-hover:hover {
+    text-decoration: underline;
+  }
+}
+
 body.js-no-touch a:hover {
   text-decoration: underline;
 }
 
 p {
-  color: $textLight;
+  color: inherit;
+}
+
+.horizontal-flex {
+  display: flex;
+  align-items: center;
 }
 
 .button-1 {
@@ -82,18 +100,20 @@ p {
   top: 0;
   left: 0;
   z-index: 2;
-  color: $navigationColor;
+  color: $text-primary;
 
   .navigation__inner {
     height: 100%;
     width: 100%;
     display: flex;
-    max-width: 1000px;
+    max-width: $width-main;
     margin: auto;
 
     .navigation__label {
-      padding: 0 12px;
-      color: $navigationColor;
+      padding: 0 20px;
+      color: $text-primary;
+      font-size: 1em;
+      font-weight: 400;
     }
 
     .navigation__bar {
@@ -103,7 +123,7 @@ p {
       height: 50px;
       width: 100%;
       z-index: 1;
-      background-color: $navigationBackground;
+      background-color: $background-primary;
 
       p {
         margin: 0;
@@ -113,6 +133,7 @@ p {
         height: 50px;
         width: 50px;
         padding: 12px;
+        margin-right: 8px;
         position: relative;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
@@ -123,7 +144,7 @@ p {
           left: 12px;
           height: 1px;
           width: 50%;
-          background-color: $navigationColor;
+          background-color: $text-primary;
           transition: transform 200ms ease-out;
         }
 
@@ -157,8 +178,9 @@ p {
       top: 100%;
       left: 0;
       width: 100%;
-      padding: 0 30px;
-      background-color: $navigationBackground;
+      padding: 0 40px;
+      padding-bottom: 10px;
+      background-color: $background-primary;
       list-style-type: none;
       transform: translateY(-100%);
       transition: transform 200ms ease-out;
@@ -168,7 +190,7 @@ p {
       .navigation__menu__line {
         height: 1px;
         width: 100%;
-        background-color: $navigationSecondaryBackground;
+        background-color: $seperator;
         display: block;
         opacity: 0;
         transition: opacity 200ms 150ms ease-out;
@@ -224,24 +246,33 @@ p {
   }
 }
 
-@media screen and (min-width: 600px) {
-  $navigationBackground: #f4f4f4;
+@media screen and (min-width: 700px) {
+  main {
+    padding-top: 120px;
+  }
 
   #navigation {
-    background-color: $navigationBackground;
+    background-color: $background-primary;
+    padding: 0 14px;
     height: 60px;
 
     .navigation__inner {
       display: flex;
       justify-content: space-between;
 
+      .navigation__label {
+        padding: 0;
+        font-size: 1.1em;
+      }
+
       .navigation__bar {
         width: initial;
         background-color: initial;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         height: 100%;
-        padding: 0 20px;
+        padding: 0;
 
         .hamburger {
           display: none;
@@ -251,19 +282,19 @@ p {
       .navigation__menu {
         position: initial;
         padding: 0;
-        padding-right: 30px;
         transform: initial;
         box-shadow: none;
         z-index: 1;
         display: flex;
         align-items: center;
         width: initial;
-        background-color: $navigationBackground;
+        background-color: $background-primary;
 
         li {
           opacity: 1;
           padding: 0;
-          margin: 0 10px;
+          margin: 0;
+          margin-left: 20px;
           font-size: 0.9em;
 
           a {
