@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.40398947.chunk.css",
+    "main.css": "/static/css/main.3a1ea1a5.chunk.css",
     "main.js": "/static/js/main.dcecfe2e.chunk.js",
     "main.js.map": "/static/js/main.dcecfe2e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b83279d6.js",
@@ -8,7 +8,7 @@
     "static/js/2.0a89e7de.chunk.js": "/static/js/2.0a89e7de.chunk.js",
     "static/js/2.0a89e7de.chunk.js.map": "/static/js/2.0a89e7de.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.40398947.chunk.css.map": "/static/css/main.40398947.chunk.css.map",
+    "static/css/main.3a1ea1a5.chunk.css.map": "/static/css/main.3a1ea1a5.chunk.css.map",
     "static/js/2.0a89e7de.chunk.js.LICENSE.txt": "/static/js/2.0a89e7de.chunk.js.LICENSE.txt",
     "static/media/hydrautronics.17534813.jpg": "/static/media/hydrautronics.17534813.jpg",
     "static/media/ivdh.f553ec61.jpg": "/static/media/ivdh.f553ec61.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.b83279d6.js",
     "static/js/2.0a89e7de.chunk.js",
-    "static/css/main.40398947.chunk.css",
+    "static/css/main.3a1ea1a5.chunk.css",
     "static/js/main.dcecfe2e.chunk.js"
   ]
 }
