@@ -5,11 +5,6 @@ import isTouchDevice from './isTouchDevice';
 import { Settings, SmoothScrollSettings } from './types';
 import easings from './easings';
 
-interface Props {
-  children?: React.ReactChild;
-  scrollSettings?: SmoothScrollSettings;
-}
-
 let isMobileDevice = false;
 const defaultSettings: Settings = {
   timingFunction: easings.easeOutQuint,
@@ -21,7 +16,10 @@ const defaultSettings: Settings = {
   // customFunction: closeMenu,
 };
 
-let settings: Settings = defaultSettings;
+interface Props {
+  children?: React.ReactChild;
+  scrollSettings?: SmoothScrollSettings;
+}
 
 /**
  * An element to wrap the elements to listen to click events. Once an anchor tag with
@@ -30,7 +28,7 @@ let settings: Settings = defaultSettings;
  */
 const SmoothScroll = ({ children, scrollSettings }: Props) => {
   const scrollWrapper = useRef<HTMLDivElement>(null);
-  settings = Object.assign(defaultSettings, scrollSettings);
+  const settings = Object.assign(defaultSettings, scrollSettings);
 
   useEffect(() => {
     isMobileDevice = isTouchDevice();
@@ -38,6 +36,7 @@ const SmoothScroll = ({ children, scrollSettings }: Props) => {
 
   const handleClick = (event: React.MouseEvent) => {
     const target = event.target as HTMLElement;
+
     if (!isValidAnchor(target)) return;
 
     event.preventDefault();
@@ -52,7 +51,6 @@ const SmoothScroll = ({ children, scrollSettings }: Props) => {
       scrollMobile({ targetId, settings });
       return;
     }
-
     scrollDesktop({ targetId, settings });
   };
 
