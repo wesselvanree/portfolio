@@ -1,66 +1,55 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 
-class Navigation extends React.Component {
-  toggleMenu() {
-    const navigationMenu = document.querySelector(
-      '.navigation__menu',
-    ) as HTMLElement;
+const Navigation = () => {
+  const [navOpen, setNavOpen] = useState(false);
+  const navigationMenu = useRef<HTMLUListElement>(null);
 
-    const hamburger = document.querySelector('.hamburger') as HTMLElement;
+  const handleNavToggle = () => {
+    setNavOpen((previous) => {
+      if (!previous) return true;
 
-    if (window.innerWidth < 600) {
-      if (navigationMenu.classList.contains('visible')) {
-        navigationMenu.classList.add('is-closing');
-        navigationMenu.classList.remove('visible');
-        hamburger.classList.remove('active');
-        setTimeout(() => {
-          navigationMenu.classList.remove('is-closing');
-        }, 500);
-      } else {
-        navigationMenu.classList.add('visible');
-        hamburger.classList.add('active');
-      }
-    }
-  }
+      navigationMenu.current?.classList.add('is-closing');
 
-  render() {
-    return (
-      <div id="navigation">
-        <div className="navigation__inner">
-          <div className="navigation__bar">
-            <h3 className="navigation__label">Wessel van Ree</h3>
-            <div
-              className="hamburger"
-              onClick={(event) => {
-                this.toggleMenu();
-              }}
-            >
-              <div className="hamburger__line hamburger__line--top"></div>
-              <div className="hamburger__line hamburger__line--bottom"></div>
-            </div>
+      setTimeout(() => {
+        navigationMenu.current?.classList.remove('is-closing');
+      }, 500);
+
+      return false;
+    });
+  };
+
+  return (
+    <div id="navigation">
+      <div className="navigation__inner">
+        <div className="navigation__bar">
+          <h3 className="navigation__label">Wessel van Ree</h3>
+          <div
+            className={`hamburger ${navOpen ? 'active' : ''}`}
+            onClick={handleNavToggle}
+          >
+            <div className="hamburger__line hamburger__line--top"></div>
+            <div className="hamburger__line hamburger__line--bottom"></div>
           </div>
-          <ul className={'navigation__menu '}>
-            {links.map((link, index) => (
-              <li key={index}>
-                <a
-                  href={link.url}
-                  onClick={(event) => {
-                    this.toggleMenu();
-                  }}
-                >
-                  {link.text}
-                </a>
-                {index < links.length - 1 ? (
-                  <span className="navigation__menu__line"></span>
-                ) : null}
-              </li>
-            ))}
-          </ul>
         </div>
+        <ul
+          ref={navigationMenu}
+          className={`navigation__menu ${navOpen ? 'visible' : ''}`}
+        >
+          {links.map(({ url, text }, index) => (
+            <li key={index}>
+              <a href={url} onClick={handleNavToggle}>
+                {text}
+              </a>
+              {index < links.length - 1 ? (
+                <span className="navigation__menu__line"></span>
+              ) : null}
+            </li>
+          ))}
+        </ul>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 const links: NavigationLink[] = [
   {
