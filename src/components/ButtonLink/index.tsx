@@ -6,21 +6,25 @@ type Props = {
   label: string;
   href: string;
   style?: React.CSSProperties;
-  color?: 'primary' | 'secondary';
+  color?: 'primary' | 'black';
   external?: boolean;
   size?: 'normal' | 'large';
   ariaLabel?: string;
+  variant?: 'filled' | 'outlined' | 'text';
 };
 
 const ButtonLink = ({
-  label,
+  label = '',
   href,
   color = 'primary',
   style,
   external = true,
   size = 'normal',
   ariaLabel = '',
+  variant = 'filled',
 }: Props) => {
+  const className = `button button-${color} size-${size} variant-${variant}`;
+
   return (
     <>
       {external ? (
@@ -28,11 +32,13 @@ const ButtonLink = ({
           style={style}
           label={label}
           href={href}
-          className={`button button-${color} size-${size}`}
+          className={className}
           ariaLabel={ariaLabel}
-        />
+        >
+          <span className="button-background"></span>
+        </ExternalLink>
       ) : (
-        <a href={href} aria-label={ariaLabel}>
+        <a href={href} className={className} aria-label={ariaLabel}>
           {label}
         </a>
       )}

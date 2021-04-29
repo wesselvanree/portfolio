@@ -54,8 +54,8 @@ const Projects = () => {
               href={githubProfile}
               label="View more on Github"
               ariaLabel="View mt Github profile"
-              size="large"
-              color="secondary"
+              color="black"
+              variant="outlined"
             />
           </div>
         </div>

@@ -141,7 +141,7 @@ body.js-no-touch {
 
   .github-project {
     width: 100%;
-    padding: 20px;
+    padding: 16px 20px;
     margin: 10px 0;
     display: flex;
     flex-direction: column;
@@ -150,12 +150,9 @@ body.js-no-touch {
     border-radius: 6px;
     background-color: $background-secondary;
 
-    a {
+    h3 {
       margin: 0;
-
-      h3 {
-        margin: 0;
-      }
+      font-weight: 600;
     }
 
     .github-project__description {
@@ -195,6 +192,7 @@ body.js-no-touch {
     .other-projects__inner {
       h1 {
         padding: 0 10px;
+        margin-bottom: 40px;
       }
     }
 

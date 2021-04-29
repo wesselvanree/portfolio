@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="footer--left">
           <h3>Wessel van Ree</h3>
           <p className="footer-paragraph">
-            Econometrics and Operational Research Student at Erasmus University
+            Econometrics and Operational Research student at Erasmus University
             Rotterdam.
           </p>
           <div

@@ -1,19 +1,21 @@
 import React from 'react';
 
 interface Props {
-  label: string;
+  label?: string;
   href: string;
   className?: string;
   style?: React.CSSProperties;
   ariaLabel?: string;
+  children?: React.ReactChild;
 }
 
 export const ExternalLink = ({
-  label,
+  label = '',
   href,
   className,
   style,
   ariaLabel = '',
+  children,
 }: Props): JSX.Element => {
   return (
     <a
@@ -25,6 +27,7 @@ export const ExternalLink = ({
       aria-label={ariaLabel}
     >
       {label}
+      {children}
     </a>
   );
 };

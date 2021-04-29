@@ -12,9 +12,7 @@ const GithubProject = ({
   return (
     <div className="github-project">
       <div>
-        <a href={url} className="primary hover-underline" target="_blanc">
-          <h3>{name}</h3>
-        </a>
+        <h3>{name}</h3>
         <p className="github-project__description">{description}</p>
         <div className="github-project__subjects">
           {topics.map((topic, index) => (
@@ -24,15 +22,18 @@ const GithubProject = ({
           ))}
         </div>
       </div>
-      {typeof demoUrl !== 'undefined' ? (
-        <ButtonLink
-          style={{ marginTop: '20px' }}
-          label="View Demo"
-          href={demoUrl}
-        />
-      ) : (
-        ''
-      )}
+      <div style={{ marginTop: '20px' }}>
+        {typeof demoUrl !== 'undefined' ? (
+          <ButtonLink
+            label="View Demo"
+            href={demoUrl}
+            style={{ marginRight: '14px' }}
+          />
+        ) : (
+          ''
+        )}
+        <ButtonLink label="Source code" href={url} variant="text" />
+      </div>
     </div>
   );
 };

@@ -10,9 +10,10 @@ a.button {
   text-decoration: none;
   background-color: $primary-color;
   font-size: 0.9em;
+  display: inline-block;
 }
 
-a.button.button-secondary {
+a.button-grey {
   color: $primary-color;
   background-color: $background-primary;
 }
@@ -23,13 +24,54 @@ a.size-large {
   font-weight: 500;
 }
 
+a.variant-outlined {
+  border: 1px solid $primary-color;
+  background-color: transparent;
+  position: relative;
+  color: $primary-color;
+
+  span.button-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $primary-color;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+  }
+}
+
+a.variant-outlined.button-black {
+  border-color: $seperator;
+  color: $text-primary;
+
+  span.button-background {
+    background-color: $text-primary;
+  }
+}
+
+a.variant-text {
+  background-color: transparent;
+  color: $primary-color;
+  padding: 0;
+}
+
 body.js-no-touch {
-  a.button:hover {
+  a.button.variant-filled:hover {
     text-decoration: none;
     background-color: $primary-color-hover;
   }
 
-  a.button.button-secondary:hover {
+  a.button.button-grey:hover {
     background-color: $background-secondary;
+  }
+
+  a.button.variant-outlined:hover {
+    text-decoration: none;
+
+    span.button-background {
+      opacity: 0.08;
+    }
   }
 }
