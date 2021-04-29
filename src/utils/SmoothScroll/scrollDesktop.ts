@@ -1,6 +1,6 @@
 import { Settings } from './types';
 
-type args = {
+type Args = {
   settings: Settings;
   targetId: string;
 };
@@ -12,7 +12,7 @@ type args = {
  *
  * This function assumes that the target element exists and the click source was an anchor.
  */
-const scrollDesktop = ({ targetId, settings }: args) => {
+const scrollDesktop = ({ targetId, settings }: Args) => {
   // get the target query selector
   if (settings.changeUrl) {
     window.history.replaceState(null, '', targetId);
