@@ -72,7 +72,7 @@ footer {
 }
 
 .footer--bottom {
-  border-top: 1px solid $seperator;
+  border-top: 1px solid $separator;
   font-size: 13px;
   color: $text-tertiary;
   padding: 10px 0;
@@ -109,3 +109,23 @@ footer {
     padding-right: 20px;
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  footer {
+    color: $text-primary-dark;
+    background-color: $background-secondary-dark;
+
+    a.grey {
+      color: $text-tertiary-dark;
+    }
+
+    .footer-grey {
+      color: $text-tertiary-dark;
+    }
+  }
+
+  .footer--bottom {
+    border-color: $separator-dark;
+    color: $text-tertiary-dark;
+  }
+} */

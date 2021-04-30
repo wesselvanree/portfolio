@@ -43,7 +43,7 @@ a.variant-outlined {
 }
 
 a.variant-outlined.button-black {
-  border-color: $seperator;
+  border-color: $separator;
   color: $text-primary;
 
   span.button-background {
@@ -76,3 +76,28 @@ body.js-no-touch {
     }
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  a.button.variant-filled {
+    background-color: $primary-color-button-dark;
+  }
+
+  body.js-no-touch {
+    a.button.variant-filled:hover {
+      background-color: $primary-color-hover-dark;
+    }
+  }
+
+  a.variant-text {
+    color: $primary-color-dark;
+  }
+
+  a.variant-outlined.button-black {
+    color: $text-secondary-dark;
+    border-color: $separator-dark;
+
+    span.button-background {
+      background-color: $text-primary-dark;
+    }
+  }
+} */

@@ -5,7 +5,7 @@
 }
 
 .contact__wrapper {
-  background-color: $primary-color-light;
+  background-color: $primary-color-background;
   padding: 0 20px;
 }
 
@@ -34,3 +34,15 @@
     }
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  .contact__wrapper {
+    background-color: $primary-color-background-dark;
+  }
+
+  .contact__inner {
+    a {
+      color: $primary-color-dark;
+    }
+  }
+} */

@@ -21,7 +21,7 @@
 
   .navigation__label {
     padding: 0 20px;
-    color: $text-primary;
+    color: inherit;
     font-size: 1em;
     font-weight: 400;
   }
@@ -58,7 +58,7 @@
     .navigation__menu__line {
       height: 1px;
       width: 100%;
-      background-color: $seperator;
+      background-color: $separator;
       display: block;
       opacity: 0;
       transition: opacity 200ms 150ms ease-out;
@@ -156,7 +156,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-tablet) {
+@media screen and (min-width: $breakpoint-navigation) {
   #navigation {
     background-color: $background-primary;
     padding: 0 14px;
@@ -216,3 +216,33 @@
     }
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  #navigation {
+    color: $text-primary-dark;
+  }
+
+  .navigation__inner {
+    .navigation__bar,
+    .navigation__menu {
+      background-color: $background-primary-dark;
+
+      .navigation__menu__line {
+        background-color: $separator-dark;
+      }
+    }
+  }
+
+  .hamburger {
+    .hamburger__line--top,
+    .hamburger__line--bottom {
+      background-color: $text-primary-dark;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-navigation) and (prefers-color-scheme: dark) {
+  #navigation {
+    background-color: $background-primary-dark;
+  }
+} */
