@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a1ea1a5.chunk.css",
-    "main.js": "/static/js/main.05af0815.chunk.js",
-    "main.js.map": "/static/js/main.05af0815.chunk.js.map",
+    "main.css": "/static/css/main.d15551fb.chunk.css",
+    "main.js": "/static/js/main.fdd17bd7.chunk.js",
+    "main.js.map": "/static/js/main.fdd17bd7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b83279d6.js",
     "runtime-main.js.map": "/static/js/runtime-main.b83279d6.js.map",
-    "static/js/2.ed0efa3c.chunk.js": "/static/js/2.ed0efa3c.chunk.js",
-    "static/js/2.ed0efa3c.chunk.js.map": "/static/js/2.ed0efa3c.chunk.js.map",
+    "static/js/2.e4435128.chunk.js": "/static/js/2.e4435128.chunk.js",
+    "static/js/2.e4435128.chunk.js.map": "/static/js/2.e4435128.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.3a1ea1a5.chunk.css.map": "/static/css/main.3a1ea1a5.chunk.css.map",
-    "static/js/2.ed0efa3c.chunk.js.LICENSE.txt": "/static/js/2.ed0efa3c.chunk.js.LICENSE.txt",
+    "static/css/main.d15551fb.chunk.css.map": "/static/css/main.d15551fb.chunk.css.map",
+    "static/js/2.e4435128.chunk.js.LICENSE.txt": "/static/js/2.e4435128.chunk.js.LICENSE.txt",
     "static/media/hydrautronics.17534813.jpg": "/static/media/hydrautronics.17534813.jpg",
     "static/media/ivdh.f553ec61.jpg": "/static/media/ivdh.f553ec61.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b83279d6.js",
-    "static/js/2.ed0efa3c.chunk.js",
-    "static/css/main.3a1ea1a5.chunk.css",
-    "static/js/main.05af0815.chunk.js"
+    "static/js/2.e4435128.chunk.js",
+    "static/css/main.d15551fb.chunk.css",
+    "static/js/main.fdd17bd7.chunk.js"
   ]
 }
