@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, {useState, useRef} from 'react';
 import './Navigation.scss';
 
 const Navigation = () => {
@@ -6,7 +6,7 @@ const Navigation = () => {
   const navigationMenu = useRef<HTMLUListElement>(null);
 
   const handleNavToggle = () => {
-    setNavOpen((previous) => {
+    setNavOpen(previous => {
       if (!previous) return true;
 
       navigationMenu.current?.classList.add('is-closing');
@@ -36,7 +36,7 @@ const Navigation = () => {
           ref={navigationMenu}
           className={`navigation__menu ${navOpen ? 'visible' : ''}`}
         >
-          {links.map(({ url, text }, index) => (
+          {links.map(({url, text}, index) => (
             <li key={index}>
               <a href={url} onClick={handleNavToggle}>
                 {text}

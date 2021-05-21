@@ -1,6 +1,6 @@
-import React from 'react'
-import {GithubProjectItem} from './data'
-import ButtonLink from '../ButtonLink'
+import React from 'react';
+import {GithubProjectItem} from './data';
+import ButtonLink from '../ButtonLink';
 
 const GithubProject = ({
   name,
@@ -35,7 +35,7 @@ const GithubProject = ({
         <ButtonLink label="Source code" href={url} variant="text" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default GithubProject
+export default GithubProject;

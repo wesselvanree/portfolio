@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 export interface ProjectItem {
-  name: string
-  year: number
-  image: string
-  imageMobile: string
-  imageAlt: string
-  url: string
+  name: string;
+  year: number;
+  image: string;
+  imageMobile: string;
+  imageAlt: string;
+  url: string;
 }
 
 const Project = ({
@@ -51,7 +51,7 @@ const Project = ({
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

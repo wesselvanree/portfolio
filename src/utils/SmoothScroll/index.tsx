@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect, useRef} from 'react';
 import scrollMobile from './scrollMobile';
 import scrollDesktop from './scrollDesktop';
 import isTouchDevice from './isTouchDevice';
-import { Settings, SmoothScrollSettings } from './types';
+import {Settings, SmoothScrollSettings} from './types';
 import easings from './easings';
 
 let isMobileDevice = false;
@@ -26,7 +26,7 @@ interface Props {
  * a href to an existing element is clicked, this component will handle the scrolling to that
  * element.
  */
-const SmoothScroll = ({ children, scrollSettings }: Props) => {
+const SmoothScroll = ({children, scrollSettings}: Props) => {
   const scrollWrapper = useRef<HTMLDivElement>(null);
   const settings = Object.assign(defaultSettings, scrollSettings);
 
@@ -48,10 +48,10 @@ const SmoothScroll = ({ children, scrollSettings }: Props) => {
     }
 
     if (isMobileDevice) {
-      scrollMobile({ targetId, settings });
+      scrollMobile({targetId, settings});
       return;
     }
-    scrollDesktop({ targetId, settings });
+    scrollDesktop({targetId, settings});
   };
 
   return (
@@ -79,5 +79,5 @@ const isValidTargetId = (id: string): boolean => {
   }
 };
 
-export { isTouchDevice };
+export {isTouchDevice};
 export default SmoothScroll;

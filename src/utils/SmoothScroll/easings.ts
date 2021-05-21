@@ -1,4 +1,4 @@
-import { Easings } from './types';
+import {Easings} from './types';
 
 const easings: Easings = {
   linear: (t: number): number => t,

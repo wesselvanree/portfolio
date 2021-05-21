@@ -1,18 +1,18 @@
-import React from 'react'
-import './projects.scss'
-import Project from './Project'
-import GithubProject from './GithubProject'
-import {projects, githubProjects} from './data'
-import ButtonLink from '../ButtonLink'
+import React from 'react';
+import './projects.scss';
+import Project from './Project';
+import GithubProject from './GithubProject';
+import {projects, githubProjects} from './data';
+import ButtonLink from '../ButtonLink';
 
 const Projects = () => {
-  const githubProfile = 'https://github.com/wesselvanree'
+  const githubProfile = 'https://github.com/wesselvanree';
 
   const githubProjectsList = githubProjects
     .sort((a, b) => {
-      if (a.name < b.name) return -1
-      if (a.name > b.name) return 1
-      return 0
+      if (a.name < b.name) return -1;
+      if (a.name > b.name) return 1;
+      return 0;
     })
     .map(({description, name, topics, url, demoUrl}, index) => (
       <GithubProject
@@ -23,7 +23,7 @@ const Projects = () => {
         url={url}
         demoUrl={demoUrl}
       />
-    ))
+    ));
 
   return (
     <>
@@ -64,7 +64,7 @@ const Projects = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

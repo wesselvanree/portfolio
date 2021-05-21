@@ -1,4 +1,4 @@
-import { Settings } from './types';
+import {Settings} from './types';
 
 type Args = {
   settings: Settings;
@@ -8,7 +8,7 @@ type Args = {
 /**
  * Scroll to the targetId, this function assumes that the targetId exists.
  */
-const scrollMobile = ({ targetId, settings }: Args) => {
+const scrollMobile = ({targetId, settings}: Args) => {
   // the targetPosition depends on the screen width
   const screenWidth =
     window.innerWidth ||

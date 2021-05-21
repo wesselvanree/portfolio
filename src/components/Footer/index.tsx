@@ -1,9 +1,9 @@
-import React from 'react'
-import './footer.scss'
-import ExternalLink from '../ExternalLink'
-import {socials} from './data'
-import {faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import React from 'react';
+import './footer.scss';
+import ExternalLink from '../ExternalLink';
+import {socials} from './data';
+import {faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   const socialsList = socials
@@ -18,9 +18,9 @@ const Footer = () => {
           </a>
         )}
       </li>
-    ))
+    ));
 
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer>
@@ -48,7 +48,7 @@ const Footer = () => {
         <p>Copyright &copy; {currentYear} Wessel van Ree</p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

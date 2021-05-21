@@ -1,15 +1,15 @@
-import {ProjectItem} from './Project'
-import hydrautronics from './images/hydrautronics.jpg'
-import ivdh from './images/ivdh.jpg'
-import hydrautronicsMobile from './images/hydrautronics-400.jpg'
-import ivdhMobile from './images/ivdh-400.jpg'
+import {ProjectItem} from './Project';
+import hydrautronics from './images/hydrautronics.jpg';
+import ivdh from './images/ivdh.jpg';
+import hydrautronicsMobile from './images/hydrautronics-400.jpg';
+import ivdhMobile from './images/ivdh-400.jpg';
 
 export interface GithubProjectItem {
-  name: string
-  url: string
-  description: string
-  topics: string[]
-  demoUrl?: string
+  name: string;
+  url: string;
+  description: string;
+  topics: string[];
+  demoUrl?: string;
 }
 
 // featured projects
@@ -30,7 +30,7 @@ export const projects: ProjectItem[] = [
     imageAlt: 'Bekijk de website van Ivdh Interieurontwerp',
     url: 'https://ivdhinterieurontwerp.nl',
   },
-]
+];
 
 // github projects
 export const githubProjects: GithubProjectItem[] = [
@@ -54,4 +54,4 @@ export const githubProjects: GithubProjectItem[] = [
     topics: ['JavaScript'],
     demoUrl: 'https://wesselvanree.github.io/js-keyboard-event/',
   },
-]
+];
