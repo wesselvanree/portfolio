@@ -31,7 +31,7 @@
   }
 }
 
-.project-showcase__content {
+a.project-showcase__content {
   max-width: 100%;
   margin: auto;
   padding-bottom: 3px;
@@ -52,12 +52,17 @@
   h2 {
     margin: 0;
     width: max-content;
+    text-decoration: inherit;
   }
 
   p {
     position: relative;
     bottom: -6px;
   }
+}
+
+body.js-no-touch a.project-showcase__content {
+  text-decoration: none;
 }
 
 .project-showcase__line {
