@@ -92,10 +92,6 @@ footer {
     a.grey {
       padding: 1px 0;
     }
-
-    li {
-      margin-bottom: 4px;
-    }
   }
 
   .footer--top {
@@ -115,6 +111,12 @@ footer {
 
   .footer--right {
     margin: 0;
+
+    ul {
+      li {
+        margin-bottom: 4px;
+      }
+    }
   }
 
   .footer-column {
