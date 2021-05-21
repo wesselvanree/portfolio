@@ -1,6 +1,6 @@
-import React from 'react';
-import { GithubProjectItem } from './data';
-import ButtonLink from '../ButtonLink';
+import React from 'react'
+import {GithubProjectItem} from './data'
+import ButtonLink from '../ButtonLink'
 
 const GithubProject = ({
   name,
@@ -12,7 +12,7 @@ const GithubProject = ({
   return (
     <div className="github-project">
       <div>
-        <h3>{name}</h3>
+        <h2>{name}</h2>
         <p className="github-project__description">{description}</p>
         <div className="github-project__subjects">
           {topics.map((topic, index) => (
@@ -22,12 +22,12 @@ const GithubProject = ({
           ))}
         </div>
       </div>
-      <div style={{ marginTop: '20px' }}>
+      <div style={{marginTop: '20px'}}>
         {typeof demoUrl !== 'undefined' ? (
           <ButtonLink
             label="View Demo"
             href={demoUrl}
-            style={{ marginRight: '14px' }}
+            style={{marginRight: '14px'}}
           />
         ) : (
           ''
@@ -35,7 +35,7 @@ const GithubProject = ({
         <ButtonLink label="Source code" href={url} variant="text" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default GithubProject;
+export default GithubProject
