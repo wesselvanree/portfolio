@@ -1,14 +1,22 @@
-import React from 'react';
+import React from 'react'
 
 export interface ProjectItem {
-  name: string;
-  year: number;
-  image: string;
-  imageAlt: string;
-  url: string;
+  name: string
+  year: number
+  image: string
+  imageMobile: string
+  imageAlt: string
+  url: string
 }
 
-const Project = ({ name, year, image, imageAlt, url }: ProjectItem) => {
+const Project = ({
+  name,
+  year,
+  image,
+  imageMobile,
+  imageAlt,
+  url,
+}: ProjectItem) => {
   return (
     <div className="project-showcase-container">
       <div className="project-showcase">
@@ -23,7 +31,13 @@ const Project = ({ name, year, image, imageAlt, url }: ProjectItem) => {
           target="_blanc"
           className="project-showcase__image-container"
         >
-          <img className="project-showcase__image" src={image} alt={imageAlt} />
+          <img
+            className="project-showcase__image"
+            srcSet={`${imageMobile} 400w, ${image} 800w`}
+            sizes="(max-width: 600px) 400px, 800px"
+            src={image}
+            alt={imageAlt}
+          />
         </a>
         <div className="project-showcase__link">
           <a
@@ -37,7 +51,7 @@ const Project = ({ name, year, image, imageAlt, url }: ProjectItem) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Project;
+export default Project
