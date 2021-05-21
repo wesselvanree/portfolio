@@ -19,6 +19,8 @@ footer {
   }
 
   a.grey {
+    display: block;
+    padding: 2px 0;
     color: $text-tertiary;
   }
 
@@ -57,7 +59,8 @@ footer {
 }
 
 .footer--right {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 6px;
   font-size: 1.1em;
 
   ul {
@@ -67,7 +70,7 @@ footer {
   }
 
   li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 }
 
@@ -85,6 +88,16 @@ footer {
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
+  footer {
+    a.grey {
+      padding: 1px 0;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+  }
+
   .footer--top {
     padding-top: 50px;
     padding-bottom: 30px;
